@@ -216,10 +216,77 @@ function changeLanguage(lang) {
     localStorage.setItem('language', lang);
 }
 
+// Automatic translation on language change
+let currentTranslationLang = 'uz';
+
+async function changeLanguageWithTranslation(lang) {
+    i18n.setLanguage(lang);
+    document.documentElement.lang = lang;
+    i18n.updatePageText();
+    currentTranslationLang = lang;
+    
+    // Kurslari qayta yuklash
+    const osCardsContainer = document.getElementById('os-cards');
+    if (osCardsContainer) {
+        osCardsContainer.innerHTML = '';
+        const osData = courseDataByLanguage[lang] || courseDataByLanguage['uz'];
+        osData.forEach(os => {
+            const card = document.createElement('div');
+            card.className = 'col-lg-3 col-md-4 col-sm-6';
+            card.id = os.anchor;
+            card.innerHTML = `
+                <a href="${os.page}" class="card">
+                    <img src="src/images/photos/os/${os.image}" class="card-img-top" alt="${os.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${os.name}</h5>
+                        <p class="card-text">${os.description}</p>
+                    </div>
+                </a>
+            `;
+            osCardsContainer.appendChild(card);
+        });
+    }
+    
+    // Footer'ni qayta yuklash
+    const listOs = document.getElementById('list-os');
+    if (listOs) {
+        const osData = courseDataByLanguage[lang] || courseDataByLanguage['uz'];
+        listOs.innerHTML = osData.map(os => `<a href="${os.page}" class="card-title">${os.name}</a>`).join('');
+    }
+    
+    // Navbar til tanlashini yangilash
+    const currentLanguageEl = document.getElementById('currentLanguage');
+    if (currentLanguageEl) {
+        const langNames = {
+            'uz': "O'zbek",
+            'en': 'English',
+            'ru': 'Русский'
+        };
+        currentLanguageEl.textContent = langNames[lang];
+    }
+    
+    localStorage.setItem('language', lang);
+    
+    // Sahifa elementlarini tarjima qilish (dars materiallari bundan mustasno)
+    if (lang !== 'uz' && typeof TranslationAPI !== 'undefined') {
+        setTimeout(() => {
+            TranslationAPI.translatePageContent(lang);
+        }, 300);
+    }
+}
+
 // Initial page load language setup
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('language') || 'uz';
     i18n.setLanguage(savedLang);
     document.documentElement.lang = savedLang;
     i18n.updatePageText();
+    currentTranslationLang = savedLang;
+    
+    // Dastlabki tarjima qilish
+    if (savedLang !== 'uz' && typeof TranslationAPI !== 'undefined') {
+        setTimeout(() => {
+            TranslationAPI.translatePageContent(savedLang);
+        }, 500);
+    }
 });

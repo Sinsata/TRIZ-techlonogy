@@ -279,8 +279,21 @@
     </div>
   </div>
 
+  <footer style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 20px; margin-top: 40px;">
+    <p style="margin-bottom: 10px; font-size: 14px;">TRIZ Texnologiyasi - Pedagogik Ijodiy Tafakkur Platformasi</p>
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 10px 0;">
+    <p style="font-size: 12px; margin-bottom: 5px;">
+      Platforma <strong><a href="https://t.me/sinsata" target="_blank" style="color: #fff; text-decoration: underline;">Sinsata</a></strong> tomonidan yaratilgan
+    </p>
+    <p style="font-size: 12px; margin: 0;">
+      <strong><a href="https://t.me/Nodirjanovna" target="_blank" style="color: #fff; text-decoration: underline;">Nabiyeva Nigora</a></strong> uchun tayyorlangan
+    </p>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
   <script src="src/auth.js"></script>
+  <script src="src/i18n.js"></script>
+  <script src="src/translate.js"></script>
   <script src="src/data.js"></script>
   <script src="src/progress.js"></script>
 
@@ -314,6 +327,15 @@
       i18n.setLanguage(lang);
       document.documentElement.lang = lang;
       i18n.updatePageText();
+      
+      // Sahifa elementlarini tarjima qilish
+      if (lang !== 'uz' && typeof TranslationAPI !== 'undefined') {
+        setTimeout(() => {
+          TranslationAPI.translatePageContent(lang);
+        }, 300);
+      }
+      
+      localStorage.setItem('language', lang);
     }
 
     function logout() {
