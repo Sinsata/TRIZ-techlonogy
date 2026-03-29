@@ -1,60 +1,110 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="page_title">TRIZ Texnologiyasi - O'qitish Platformasi</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIZ Texnologiyasi - Pedagoglar uchun Ijodiy Tafakkur Platformasi</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <h1 data-i18n="platform_name">TRIZ Platformasi</h1>
-      </div>
-      <div class="nav-links">
-        <a href="login.html" data-i18n="nav_login">Kirish</a>
-        <a href="#about" data-i18n="nav_about">Qo'llanma</a>
-      </div>
-      <select class="language-selector" onchange="changeLanguage(this.value)">
-        <option value="uz">O'zbek</option>
-        <option value="en">English</option>
-        <option value="ru">Русский</option>
-      </select>
+    <script src="src/auth.js"></script>
+    <script>
+        // Autentifikatsiya tekshirish
+        window.addEventListener('load', () => {
+            if (!auth.isAuthenticated()) {
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">TRIZ - Ijodiy Tafakkur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/macos.html">TRIZ Asoslari</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/windows.html">40 Ta Prinsip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/linux.html">Paradoks Matritsa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/ios.html">Amaliy Misollar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/android.html">Metodika va Vositalari</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Kurslar Bo'limi -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">TRIZ Texnologiyasi va Pedagogik Ijodiy Tafakkur</h1>
+        <p class="text-center text-muted mb-4">Bo'lajak pedagoglarning ijodiy qobiliyatlarini rivojlantirish uchun to'liq o'qitish platformasi</p>
+        <div class="row" id="os-cards">
+            <!-- Kurs cardlari shu yerda qo'shiladi -->
+        </div>
     </div>
-  </nav>
 
-  <section class="hero">
-    <div class="container">
-      <h1 data-i18n="hero_title">TRIZ Texnologiyasi Bilan Mustaqil O'qitish</h1>
-      <p data-i18n="hero_subtitle">Innovatsiya va masala yechishni o'rganing</p>
-      <a href="login.html" class="btn btn-primary" data-i18n="btn_start">Boshlash</a>
+
+    <!-- TRIZ Haqida Bo'limi -->
+    <div class="container my-5">
+        <h2>TRIZ Nima?</h2>
+        <p><strong>TRIZ</strong> (Teoriya Inventiv Problemalar Yechimi) - bu muammolarni hal qilishning ijodiy va tizimli usuli. Genrikh Altshullero'z tomonidan ishlab chiqilgan bu metodologiya insonlarning ijodiy qobiliyatlarini rivojlantirishda juda samarali.</p>
+        
+        <h3>TRIZ ning Asosiy Tamoyillari:</h3>
+        <ul>
+            <li><strong>Idealliligi:</strong> Har bir sistema ideal holga intilishi kerak.</li>
+            <li><strong>Qarama-qarshiliklari:</strong> Muammolar odatda qarama-qarshi talablardan tug'iladi.</li>
+            <li><strong>Evolutsionliligi:</strong> Tizimlar o'zlarining taraqqiyot qonunlari asosida rivojlanadi.</li>
+            <li><strong>Dinamikligi:</strong> Tizimning har bir qismi o'zgaruvchan bo'lishi kerak.</li>
+        </ul>
+        <p>TRIZ metodologiyasi orqali pedagoglar o'quv jarayonida o'quvchilarning ijodiy tafakkurini rivojlanta oladi.</p>
     </div>
-  </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2 data-i18n="about_title">TRIZ Nima?</h2>
-      <p data-i18n="about_desc">TRIZ - Inventiv Muammolarni Yechish Nazariyasi</p>
+    <!-- Pedagoglar Uchun Foydalanish Bo'limi -->
+    <div class="container my-5">
+        <h2>Pedagoglar Uchun Foydalanish</h2>
+        <p>Ushbu platforma bo'lajak pedagoglar va o'qituvchilar uchun mo'ljallangan. Siz bu yerda:</p>
+        <ul>
+            <li>TRIZ texnologiyasining asosiy tamoyillarini o'zlashtirish</li>
+            <li>40 ta ijodiy prinsipni to'liq o'rganish</li>
+            <li>Paradoks matritsani amaliy qo'llash</li>
+            <li>Real pedagogik muammolarni hal qilish</li>
+            <li>O'quvchilarning ijodiy tafakkurini rivojlantirishning metodikasini o'zlashtirish</li>
+        </ul>
     </div>
-  </section>
 
-  <footer>
-    <p data-i18n="footer_copy">&copy; 2024 TRIZ Platformasi. Barcha huquqlar saqlanib qoldi.</p>
-  </footer>
 
-  <script src="js/i18n.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const savedLang = localStorage.getItem('language') || 'uz';
-      document.querySelector('.language-selector').value = savedLang;
-      translatePage(savedLang);
-    });
+    <!-- Biz haqimizda Bo'limi -->
+    <div class="container my-5">
+        <h2>Platformaning Maqsadi</h2>
+        <p>Bu platforma bo'lajak pedagoglarning ijodiy tafakkurni rivojlantirish metodikasini takomillashtirish uchun mo'ljallangan. TRIZ asosida pedagogik o'rta rivojlantirilsa, o'quv jarayoni yanada samarali va yoqimli bo'ladi.</p>
+    </div>
 
-    function changeLanguage(lang) {
-      localStorage.setItem('language', lang);
-      translatePage(lang);
-    }
-  </script>
+
+    <!-- Footer -->
+    <footer class="bg-jade text-white text-center py-3">
+        <p>TRIZ Texnologiyasi - Pedagogik Ijodiy Tafakkur Kurslari</p>
+        <div id="list-os"></div>
+        <p>2024 - Pedagogik Rivojlanish Markazi | TRIZ Platformasi</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="src/main.js"></script>
 </body>
+
 </html>

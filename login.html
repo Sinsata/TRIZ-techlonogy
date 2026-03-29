@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="loginTitle">Kirish / Ro'yxatdan O'tish - Ta'lim Platformasi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/i18n.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .auth-container {
+      max-width: 450px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .language-selector {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .language-selector select {
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: none;
+      background: white;
+      color: #333;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .auth-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      animation: slideUp 0.5s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .auth-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .auth-header h2 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    .auth-body {
+      padding: 30px;
+    }
+
+    .form-group label {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .form-control {
+      border: 2px solid #f0f0f0;
+      border-radius: 8px;
+      padding: 12px 15px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    }
+
+    .btn-auth {
+      width: 100%;
+      padding: 12px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+
+    .btn-login {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-login:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+      color: white;
+    }
+
+    .toggle-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .toggle-text a {
+      color: #667eea;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .toggle-text a:hover {
+      color: #764ba2;
+      text-decoration: none;
+    }
+
+    .error-message {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: none;
+    }
+
+    .error-message.show {
+      display: block;
+    }
+
+    .form-section {
+      display: none;
+    }
+
+    .form-section.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .success-message {
+      background: #d4edda;
+      color: #155724;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: none;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    .password-strength {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .strength-bar {
+      height: 4px;
+      border-radius: 2px;
+      background: #ddd;
+      margin: 5px 0;
+      overflow: hidden;
+    }
+
+    .strength-fill {
+      height: 100%;
+      transition: all 0.3s;
+      width: 0;
+      background: #dc3545;
+    }
+
+    .strength-fill.weak {
+      width: 33%;
+      background: #dc3545;
+    }
+
+    .strength-fill.medium {
+      width: 66%;
+      background: #ffc107;
+    }
+
+    .strength-fill.strong {
+      width: 100%;
+      background: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <!-- Language Selector -->
+  <div class="language-selector">
+    <select id="language-select" onchange="changeLanguage(this.value)">
+      <option value="uz">Uzbek</option>
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
+    </select>
+  </div>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <!-- Login Form -->
+      <div class="form-section active" id="login-section">
+        <div class="auth-header">
+          <h2 data-i18n="loginTitle">Ta'lim Platformasiga Kirish</h2>
+          <p style="margin-top: 10px;">Operatsion Tizimlar</p>
+        </div>
+        <div class="auth-body">
+          <div class="error-message" id="login-error"></div>
+          <form id="login-form" onsubmit="handleLogin(event)">
+            <div class="form-group">
+              <label for="login-email" data-i18n="email">Email</label>
+              <input type="email" class="form-control" id="login-email" data-i18n-placeholder="email" placeholder="Email kiriting" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password" data-i18n="password">Parol</label>
+              <input type="password" class="form-control" id="login-password" data-i18n-placeholder="password" placeholder="Parolingizni kiriting" required>
+            </div>
+            <button type="submit" class="btn btn-auth btn-login" data-i18n="login">Kirish</button>
+          </form>
+          <div class="toggle-text">
+            <span data-i18n="dontHaveAccount">Akkauntingiz yo'qmi?</span> <a onclick="toggleForms()">
+              <span data-i18n="signup">Ro'yxatdan o'ting</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div class="form-section" id="signup-section">
+        <div class="auth-header">
+          <h2 data-i18n="signupTitle">Ro'yxatdan O'tish</h2>
+          <p style="margin-top: 10px;">Yangi akkaunt yaratish</p>
+        </div>
+        <div class="auth-body">
+          <div class="error-message" id="signup-error"></div>
+          <div class="success-message" id="signup-success" data-i18n="signupSuccess">Akkaunt muvaffaqiyatli yaratildi! Dashboard'ga o'tish...</div>
+          <form id="signup-form" onsubmit="handleSignup(event)">
+            <div class="form-group">
+              <label for="signup-username" data-i18n="username">Foydalanuvchi nomi</label>
+              <input type="text" class="form-control" id="signup-username" data-i18n-placeholder="username" placeholder="Foydalanuvchi nomini kiriting" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-email" data-i18n="email">Email</label>
+              <input type="email" class="form-control" id="signup-email" data-i18n-placeholder="email" placeholder="Email kiriting" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-password" data-i18n="password">Parol</label>
+              <input type="password" class="form-control" id="signup-password" data-i18n-placeholder="password" placeholder="Kuchli parol tanlang" required onkeyup="checkPasswordStrength(this.value)">
+              <div class="strength-bar">
+                <div class="strength-fill" id="strength-fill"></div>
+              </div>
+              <small class="password-strength" id="strength-text"></small>
+            </div>
+            <div class="form-group">
+              <label for="signup-password-confirm" data-i18n="confirmPassword">Parolni Tasdiqlash</label>
+              <input type="password" class="form-control" id="signup-password-confirm" data-i18n-placeholder="confirmPassword" placeholder="Parolni qaytadan kiriting" required>
+            </div>
+            <button type="submit" class="btn btn-auth btn-login" data-i18n="signup">Ro'yxatdan O'tish</button>
+          </form>
+          <div class="toggle-text">
+            <span data-i18n="alreadyHaveAccount">Allaqachon akkauntingiz bor?</span> <a onclick="toggleForms()">
+              <span data-i18n="login">Kirish</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="src/auth.js"></script>
+  <script>
+    // Set language selector to current language
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('language-select').value = i18n.getLanguage();
+    });
+
+    function changeLanguage(lang) {
+      i18n.setLanguage(lang);
+      document.documentElement.lang = lang;
+      i18n.updatePageText();
+    }
+
+    function toggleForms() {
+      document.getElementById('login-section').classList.toggle('active');
+      document.getElementById('signup-section').classList.toggle('active');
+      document.getElementById('login-error').classList.remove('show');
+      document.getElementById('signup-error').classList.remove('show');
+    }
+
+    function checkPasswordStrength(password) {
+      const strengthFill = document.getElementById('strength-fill');
+      const strengthText = document.getElementById('strength-text');
+      
+      let strength = 'Kuch',
+          fillClass = '';
+      
+      if (password.length < 6) {
+        fillClass = '';
+        strength = 'Kuchsiz';
+      } else if (password.length < 10) {
+        fillClass = 'weak';
+        strength = 'Kuchsiz';
+      } else if (!/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+        fillClass = 'medium';
+        strength = 'O\'rta';
+      } else {
+        fillClass = 'strong';
+        strength = 'Kuchli';
+      }
+      
+      strengthFill.className = 'strength-fill ' + fillClass;
+      strengthText.textContent = strength;
+    }
+
+    function handleLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+      const errorDiv = document.getElementById('login-error');
+
+      if (!auth.login(email, password)) {
+        errorDiv.textContent = i18n.t('invalidEmail');
+        errorDiv.classList.add('show');
+      } else {
+        window.location.href = 'dashboard.html';
+      }
+    }
+
+    function handleSignup(event) {
+      event.preventDefault();
+      const username = document.getElementById('signup-username').value;
+      const email = document.getElementById('signup-email').value;
+      const password = document.getElementById('signup-password').value;
+      const confirmPassword = document.getElementById('signup-password-confirm').value;
+      const errorDiv = document.getElementById('signup-error');
+
+      if (password !== confirmPassword) {
+        errorDiv.textContent = i18n.t('passwordMismatch');
+        errorDiv.classList.add('show');
+        return;
+      }
+
+      if (auth.signup(username, email, password)) {
+        document.getElementById('signup-success').classList.add('show');
+        setTimeout(() => {
+          window.location.href = 'dashboard.html';
+        }, 1500);
+      } else {
+        errorDiv.textContent = i18n.t('invalidEmail');
+        errorDiv.classList.add('show');
+      }
+    }
+  </script>
+</body>
+</html>

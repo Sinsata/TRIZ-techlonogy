@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">TRIZ - Ijodiy Tafakkur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./macos.html">TRIZ Asoslari</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./windows.html">40 Ta Prinsip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./linux.html">Paradoks Matritsa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ios.html">Amaliy Misollar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./android.html">Metodika</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar tugmasi -->
+    <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+    <label for="sidebarToggle" id="toggleLabel"></label>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Amaliy Pedagogik Misollar</h2>
+        <ul>
+            <li><a href="#example1">Misol 1: Interaktiv Dars</a></li>
+            <li><a href="#example2">Misol 2: Turli Fanlarni Birlashtiirish</a></li>
+            <li><a href="#example3">Misol 3: O'quvchi Ijodiyligini Faollashtirish</a></li>
+            <li><a href="#example4">Misol 4: Muammolo O'rganish</a></li>
+            <li><a href="#exercise">Amaliy Mashq</a></li>
+            <li><a href="#management">4-dars: iOS Dasturlarini Boshqarish</a></li>
+            <li><a href="#security">5-dars: iOS Xavfsizligi</a></li>
+        </ul>
+    </div>
+
+    <!-- Asosiy Qism -->
+    <div class="container my-5">
+        <div class="jumbotron text-center" style="position: relative;">
+            <h1 class="display-4" style="position: relative; z-index: 1;">iOS</h1>
+            <img src="../images/photos/os/ios-image.png" alt="iOS" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(50%);">
+        </div>
+
+        <div class="section my-5" id="entry">
+            <h2>1-mavzu: iOS - Kirish</h2>
+            <p>iOS — bu Apple Inc. tomonidan ishlab chiqilgan mobil operatsion tizim bo'lib, iPhone, iPad va iPod Touch qurilmalarida ishlatiladi. Birinchi marta 2007 yilda chiqarilgan iOS, iPhone OS deb nomlangan va 2010 yilda iOS nomini oldi. iOS dunyodagi eng ommabop mobil operatsion tizimlardan biri bo'lib, yuqori darajadagi xavfsizlik, ishlash samaradorligi va foydalanuvchi tajribasini ta'minlaydi.</p>
+
+            <img src="../images/photos/os/ios-section1.png" alt="iOS Kirish" class="img-fluid">
+
+            <p>iOS keng ekotizimga ega bo'lib, Apple'ning App Store do'konida millionlab ilovalar mavjud. Foydalanuvchilar uchun qulay interfeys va intuitiv boshqaruv elementlari iOS'ni juda mashhur qilgan. iOS, shuningdek, Apple ekotizimining boshqa qurilmalari bilan, masalan, macOS va watchOS bilan kuchli integratsiyani ta'minlaydi.</p>
+        </div>
+
+        <div class="section my-5" id="architecture">
+            <h2>2-mavzu: iOS Arxitekturasi</h2>
+            <p>iOS arxitekturasi bir necha qatlamlardan iborat bo'lib, har biri muayyan funksiyalarni bajaradi. Quyida iOS arxitekturasi asosiy komponentlari haqida ma'lumot berilgan:</p>
+
+            <img src="../images/photos/os/ios-section2.png" alt="iOS Arxitekturasi" class="img-fluid">
+
+            <h3>Core OS</h3>
+            <p>Core OS — bu iOS'ning asosiy qatlamidir va tizimning apparat bilan bog'liq barcha operatsiyalarini boshqaradi. U kernel, xotira boshqaruvi, fayl tizimi va tarmoq boshqaruvini o'z ichiga oladi. Core OS, shuningdek, xavfsizlik va quvvat boshqaruvi kabi past darajadagi funksiyalarni ham ta'minlaydi.</p>
+
+            <h3>Core Services</h3>
+            <p>Core Services — bu tizim xizmatlari qatlamidir va asosiy dasturiy interfeyslarni ta'minlaydi. Bunga Foundation framework, Core Data, CloudKit va boshqa asosiy xizmatlar kiradi. Core Services ilovalar uchun kengaytirilgan funksiyalarni ta'minlaydi va ma'lumotlarni boshqarish imkoniyatini beradi.</p>
+
+            <h3>Media</h3>
+            <p>Media qatlamida grafik, audio va video ishlov berish xizmatlari mavjud. Core Graphics, Core Animation, AVFoundation va boshqa media xizmatlari bu qatlamda joylashgan. Media qatlami ilovalarga yuqori sifatli multimedia imkoniyatlarini qo'shish imkonini beradi.</p>
+
+            <h3>Cocoa Touch</h3>
+            <p>Cocoa Touch — bu ilovalar uchun foydalanuvchi interfeyslarini yaratish uchun ishlatiladigan qatlam. UIKit framework, Touch event handling, multi-tasking va boshqa foydalanuvchi interfeysi xizmatlari bu qatlamda joylashgan. Cocoa Touch foydalanuvchilarga sezgir va intuitiv interfeyslar yaratish imkonini beradi.</p>
+
+            <h3>Xulosa</h3>
+            <p>iOS arxitekturasi qatlamli dizaynga ega bo'lib, har bir qatlam o'ziga xos funksiyalarni bajaradi. Core OS, Core Services, Media va Cocoa Touch qatlamlari iOS operatsion tizimining kuchli va samarali ishlashini ta'minlaydi.</p>
+        </div>
+
+        <div class="section my-5" id="interface">
+            <h2>3-mavzu: iOS Foydalanuvchi Interfeysi</h2>
+            <p>iOS foydalanuvchi interfeysi (UI) intuitiv va qulay bo'lib, foydalanuvchilarga oson boshqarishni ta'minlaydi. Quyida iOS foydalanuvchi interfeysi asosiy elementlari haqida ma'lumot berilgan:</p>
+
+            <img src="../images/photos/os/ios-section3.png" alt="iOS Foydalanuvchi Interfeysi" class="img-fluid">
+
+            <h3>Home Screen</h3>
+            <p>Home Screen — bu iOS qurilmasining asosiy ekrani bo'lib, ilovalar, vidjetlar va boshqa elementlarni ko'rsatadi. Foydalanuvchilar ilovalarni ochish, o'rnatish va tashkil qilish uchun Home Screen'dan foydalanadilar.</p>
+
+            <h3>Control Center</h3>
+            <p>Control Center — bu tezkor boshqaruv elementlarini taqdim etuvchi interfeysdir. Foydalanuvchilar ekran yorqinligini sozlash, Wi-Fi va Bluetooth'ni yoqish/o'chirish, musiqani boshqarish kabi funksiyalarga tezkor kirish imkoniyatiga ega bo'ladilar.</p>
+
+            <h3>Notification Center</h3>
+            <p>Notification Center — bu bildirishnomalarni ko'rsatish va boshqarish uchun ishlatiladigan interfeysdir. Foydalanuvchilar bu yerda yangi xabarlar, ilova bildirishnomalari va boshqa muhim xabarlardan xabardor bo'ladilar.</p>
+
+            <h3>Multitasking</h3>
+            <p>Multitasking interfeysi foydalanuvchilarga bir nechta ilovalarni bir vaqtda boshqarish imkoniyatini beradi. Foydalanuvchilar ochiq ilovalar orasida tezkor o'tish, ilovalarni yopish va multitasking funksiyalaridan foydalanishlari mumkin.</p>
+
+            <h3>Gestures</h3>
+            <p>iOS foydalanuvchilariga qulay boshqaruvni ta'minlash uchun turli xil gesture'larni (harakatlar) qo'llab-quvvatlaydi. Masalan, surish, chimchilash, bosish va ko'tarish kabi harakatlar orqali foydalanuvchilar ilovalarni boshqarishlari mumkin.</p>
+
+            <h3>Xulosa</h3>
+            <p>iOS foydalanuvchi interfeysi intuitiv va qulay bo'lib, foydalanuvchilarga oson va samarali boshqaruvni ta'minlaydi. Home Screen, Control Center, Notification Center, Multitasking va Gestures iOS foydalanuvchi interfeysining asosiy elementlaridir.</p>
+        </div>
+
+        <div class="section my-5" id="management">
+            <h2>4-mavzu: iOS Dasturlarini Boshqarish</h2>
+            <p>iOS operatsion tizimida dasturlarni boshqarish qulay va samarali funksiyalardan biridir. Quyida iOS tizimida dasturlarni boshqarishning asosiy usullari haqida ma'lumotlar keltirilgan:</p>
+
+            <h3>App Store</h3>
+            <p>App Store — bu iOS uchun rasmiy dastur do'koni bo'lib, foydalanuvchilar bu yerda millionlab ilovalarni ko'rib chiqishlari, yuklab olishlari va o'rnatishlari mumkin. App Store'da har qanday ehtiyoj uchun ilovalar mavjud, jumladan o'yinlar, biznes, ta'lim va boshqa sohalar.</p>
+
+            <h3>App Management</h3>
+            <p>iOS ilovalarni boshqarish imkonini beradi. Foydalanuvchilar ilovalarni yuklab olish, yangilash va olib tashlashlari mumkin. Ilovalar Home Screen'da tashkil qilinadi va papkalar orqali tartiblanadi.</p>
+            <img src="../images/photos/os/ios-section4.png" alt="iOS Dasturlarini Boshqarish" class="img-fluid">
+        </div>
+
+        <div class="section my-5" id="security">
+            <h2>5-mavzu: iOS Xavfsizligi</h2>
+            <p>iOS, mobil operatsion tizimlar ichida keng xavfsizlikni ta'minlash uchun muhim xususiyatlarga ega. Quyidagi elementlar iOS xavfsizligini ta'minlashning asosiy qismlarini ifodalaydi:</p>
+
+            <img src="../images/photos/os/ios-section5.png" alt="iOS Xavfsizligi" class="img-fluid">
+
+            <h3>Biometric Authentication</h3>
+            <p>iOS qurilmalari uchun eng mashhur xavfsizlik usullaridan biri biometrik autentifikatsiya, masalan, Touch ID va Face ID orqali foydalanuvchi autentifikatsiyasi.</p>
+            <h3>App Sandbox</h3>
+            <p>iOS dasturlari "App Sandbox" bo'yicha ishlaydi, bu esa har bir dasturning tizim resurslariga chegaralanishini ta'minlaydi, shuningdek, boshqa dasturlar bilan munosabatlarini cheklash.</p>
+            <h3>Encryption (Shifrlash)</h3>
+            <p>iOS qurilmalari diskni shifrlash uchun ishlatiladigan AES (Advanced Encryption Standard) ni qo'llaydi, shuningdek, End-to-End shifrlashni foydalanuvchilarga taqdim etadi.</p>
+            <h3>Secure Boot Process</h3>
+            <p>iOS qurilmalari uchun "Secure Boot" protsessi ma'lumotlarni to'g'ri ishlaydigan dasturlarni o'rnatishdan oldin sinovdan o'tkazadi.</p>
+            <h3>Find My iPhone</h3>
+            <p>"Find My iPhone" xizmati iOS qurilmasini yo'q qilgan vaqtda uni topishga yordam beradi va ma'lumotlarni o'chirish imkonini beradi.</p>
+            <h3>Xulosa</h3>
+            <p>iOS tizimi keng xavfsizlik tajribasi ta'minlash uchun biometric autentifikatsiya, App Sandbox, shifrlash, secure boot protsessi va Find My iPhone xizmati kabi xavfsizlik vositalarini qo'llab-quvvatlaydi. Bu vositalar foydalanuvchilarga xavfsiz va ishonchli mobil muhit yaratadi.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-jade text-white text-center py-3">
+        <p>Operatsion Tizimlar Darslari ro'yxati</p>
+        <div id="list-os">
+            <a href="./windows.html" class="card-title">Windows</a>
+            <a href="./macos.html" class="card-title">macOS</a>
+            <a href="./linux.html" class="card-title">Linux</a>
+            <a href="./ios.html" class="card-title">iOS</a>
+            <a href="./android.html" class="card-title">Android</a>
+        </div>
+        <p>2024 - Urgench | Create by Sinsata</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

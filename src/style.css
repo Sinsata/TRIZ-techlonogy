@@ -1,0 +1,189 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    z-index: 200;
+}
+
+.content {
+    margin-left: auto; /* Sidebar kengligi */
+    padding: 20px;
+}
+
+.sidebar.active .content {
+    margin-left: 250px;
+}
+
+/* Sidebar uchun stil */
+.sidebar {
+    position: fixed;
+    top: 55px;
+    left: -300px; /* Yashirish */
+    width: 250px;
+    height: calc(100% - 60px);
+    background-color: #fff;
+    color: black;
+    padding: 15px;
+    transition: 0.3s;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px #0005;
+    border-radius: 0 5px 5px 0;
+    z-index: 99;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.sidebar ul li a:hover {
+    color: #00A36C;
+}
+
+/* Sidebarni ko'rsatish */
+.sidebar.active {
+    left: 0;
+}
+
+/* Sidebar tugmasi */
+.sidebar-toggle {
+    position: fixed;
+    top: 65px;
+    left: 5px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar-toggle:focus {
+    outline: none;
+}
+
+.sidebar-toggle + #toggleLabel.active {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0005;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+
+a {
+    text-decoration: none;
+    color: #555555;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #555555;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.container ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.bg-jade {
+    background-color: #00A36C;
+}
+
+.text-white {
+    color: white;
+}
+
+.jumbotron h1 {
+    color: #fff;
+}
+.jumbotron img {
+    border-radius: 5px;
+}
+
+.section {
+    scroll-margin-top: 50px;
+}
+
+.section > img {
+    margin: 20px auto;
+    width: 75%;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#os-cards .card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+#os-cards .card:hover {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#os-cards .card:hover .card-img-top {
+    transition: 0.2s;
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .modal-container {
+        width: 200px;
+    }
+}
+
+footer #list-os a {
+    color: #ddd;
+    display: block;
+}
+
+footer #list-os a:hover{
+    color: #fff;
+}

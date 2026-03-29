@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurs Tafsiloti - Ta'lim Platformasi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/i18n.js"></script>
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background: white !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-bottom: 1px solid #eee;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #667eea !important;
+      font-size: 20px;
+    }
+
+    .nav-link {
+      color: #666 !important;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #667eea !important;
+    }
+
+    .course-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .course-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .progress-section {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar-large {
+      background: rgba(255,255,255,0.3);
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: white;
+      border-radius: 4px;
+    }
+
+    .lessons-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .lessons-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .lesson-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border-left: 5px solid #667eea;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .lesson-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    }
+
+    .lesson-item.completed {
+      border-left-color: #28a745;
+      background: #f8fffe;
+    }
+
+    .lesson-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .lesson-number {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .lesson-item.completed .lesson-number {
+      background: #28a745;
+    }
+
+    .lesson-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .lesson-status {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .badge-completed {
+      background: #28a745;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .badge-pending {
+      background: #ffc107;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .quiz-score {
+      color: #667eea;
+      font-weight: 600;
+    }
+
+    .lesson-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .btn-lesson {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+      transition: transform 0.3s;
+      display: inline-block;
+    }
+
+    .btn-lesson:hover {
+      transform: translateY(-2px);
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background: #e0e0e0;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      border-radius: 12px;
+      color: #999;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: opacity 0.3s;
+    }
+
+    .back-button:hover {
+      opacity: 0.8;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="dashboard.html">Ta'lim Platformasi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html" data-i18n="dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html" data-i18n="courses">Kurslar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html" data-i18n="forum">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html" data-i18n="profile">Profil</a>
+          </li>
+          <li class="nav-item" style="margin-left: 10px;">
+            <select id="language-select" onchange="changeLanguage(this.value)" style="padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+              <option value="uz">Uzbek</option>
+              <option value="en">English</option>
+              <option value="ru">Русский</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Course Header -->
+  <div class="course-header">
+    <div class="container">
+      <a href="courses.html" class="back-button">← Barcha kurslar</a>
+      <h1 id="course-name">Kurs nomi</h1>
+      <p id="course-description">Kurs tavsifi</p>
+      
+      <div class="progress-section">
+        <div class="progress-info">
+          <span>Taraqqiyot:</span>
+          <span id="completion-percentage">0%</span>
+        </div>
+        <div class="progress-bar-large">
+          <div class="progress-bar-fill" id="progress-bar" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lessons List -->
+  <div class="container lessons-container">
+    <h2 class="lessons-title">Darslar</h2>
+    <div id="lessons-container">
+      <!-- Darslar shu yerga qo'shiladi -->
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="src/auth.js"></script>
+  <script src="src/data.js"></script>
+  <script src="src/progress.js"></script>
+
+  <script>
+    window.addEventListener('load', () => {
+      // Set language selector
+      document.getElementById('language-select').value = i18n.getLanguage();
+
+      // Autentifikatsiya tekshirish
+      const currentUser = auth.getCurrentUser();
+      if (!currentUser) {
+        window.location.href = 'login.html';
+        return;
+      }
+
+      // Kurs ID'ni URL'dan olish
+      const params = new URLSearchParams(window.location.search);
+      const courseId = params.get('course');
+
+      if (!courseId) {
+        window.location.href = 'courses.html';
+        return;
+      }
+
+      // Kurs ma'lumotlarini olish
+      const course = getCourseById(courseId);
+      if (!course) {
+        window.location.href = 'courses.html';
+        return;
+      }
+
+      // Kurs nomini va tavsifini ko'rsatish
+      document.getElementById('course-name').textContent = course.name;
+      document.getElementById('course-description').textContent = course.description;
+
+      // Darslarni ko'rsatish
+      renderLessons(currentUser.id, courseId, course.lessons);
+
+      // Progressni yangilash
+      updateProgress(currentUser.id, courseId);
+    });
+
+    function changeLanguage(lang) {
+      i18n.setLanguage(lang);
+      document.documentElement.lang = lang;
+      i18n.updatePageText();
+    }
+
+    function renderLessons(userId, courseId, lessons) {
+      const container = document.getElementById('lessons-container');
+      
+      container.innerHTML = lessons.map((lesson, index) => {
+        const isCompleted = progress.isLessonCompleted(userId, courseId, lesson.id);
+        const quizScore = progress.getQuizScore(userId, courseId, lesson.id);
+        
+        return `
+          <div class="lesson-item ${isCompleted ? 'completed' : ''}">
+            <div class="lesson-header">
+              <div>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <div class="lesson-number">${index + 1}</div>
+                  <h4 class="lesson-title">${lesson.title}</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="lesson-status">
+              ${isCompleted ? `<span class="badge-completed">✓ Tugatilgan</span>` : `<span class="badge-pending">Kutayotgan</span>`}
+              ${quizScore !== null ? `<span class="quiz-score">Test: ${quizScore}%</span>` : ''}
+            </div>
+
+            <div class="lesson-actions">
+              <a href="lesson.html?course=${courseId}&lesson=${lesson.id}" class="btn-lesson">
+                ${isCompleted ? 'Yana O\'qish' : 'Darsni O\'qish'}
+              </a>
+              ${lesson.quiz ? `
+                <a href="quiz.html?course=${courseId}&lesson=${lesson.id}" class="btn-lesson btn-secondary">
+                  Test O'tish
+                </a>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function updateProgress(userId, courseId) {
+      const completionPercentage = progress.getCourseCompletionPercentage(userId, courseId);
+      document.getElementById('completion-percentage').textContent = completionPercentage + '%';
+      document.getElementById('progress-bar').style.width = completionPercentage + '%';
+    }
+  </script>
+</body>
+</html>
