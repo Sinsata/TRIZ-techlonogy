@@ -1,4 +1,4 @@
-// Multi-language support for the education platform
+// Multi-language support for TRIZ Creative Thinking Platform
 const translations = {
     uz: {
         // Navigation
@@ -10,8 +10,12 @@ const translations = {
         logout: 'Chiqish',
         language: 'Til',
         
+        // Platform Title
+        platformTitle: 'TRIZ Texnologiyasi - Pedagoglar uchun Ijodiy Tafakkur',
+        platformSubtitle: 'Bo\'lajak pedagoglarning ijodiy qobiliyatlarini rivojlantirish uchun to\'liq o\'qitish platformasi',
+        
         // Login Page
-        loginTitle: 'Operatsion Tizimlar Platformasiga Kirish',
+        loginTitle: 'TRIZ Platformasiga Kirish',
         email: 'Email',
         password: 'Parol',
         login: 'Kirish',
@@ -76,6 +80,27 @@ const translations = {
         totalScore: 'Jami Ball',
         completionRate: 'Tugatilish Stavkasi',
         
+        // TRIZ Specific
+        trizTitle: 'TRIZ Texnologiyasi',
+        trizFoundations: 'TRIZ Asoslari',
+        trizPrinciples: '40 Ta Ijodiy Prinsip',
+        contradictionMatrix: 'Paradoks Matritsa',
+        practicalExamples: 'Amaliy Pedagogik Misollar',
+        methodology: 'Metodika va Vositalari',
+        ideality: 'Ideallik',
+        contradiction: 'Qarama-qarshilik',
+        resources: 'Resurslar',
+        evolution: 'Evolventsiya',
+        principles: 'Prinsiplar',
+        segmentation: 'Segmentatsiya',
+        extraction: 'Chiqarish',
+        localQuality: 'Mahalliy Xususiyat',
+        asymmetry: 'Asimmetriya',
+        merging: 'Biriktirish',
+        universality: 'Universallashtirilgan Maqsad',
+        translation: 'Yo\'naltirilgan Xususiyat',
+        dynamics: 'Dinamika',
+        
         // General
         loading: 'Yuklanmoqda...',
         error: 'Xato',
@@ -84,13 +109,7 @@ const translations = {
         save: 'Saqlash',
         edit: 'Tahrir Qilish',
         back: 'Orqaga',
-        
-        // OS Specific
-        windows: 'Windows',
-        macos: 'macOS',
-        linux: 'Linux',
-        ios: 'iOS',
-        android: 'Android',
+        selectLanguage: 'Tilni tanlang',
     },
     en: {
         // Navigation
@@ -102,8 +121,12 @@ const translations = {
         logout: 'Logout',
         language: 'Language',
         
+        // Platform Title
+        platformTitle: 'TRIZ Technology - Creative Thinking Platform for Teachers',
+        platformSubtitle: 'Complete learning platform to develop creative thinking methodology for future educators',
+        
         // Login Page
-        loginTitle: 'Login to Operating Systems Platform',
+        loginTitle: 'Login to TRIZ Platform',
         email: 'Email',
         password: 'Password',
         login: 'Login',
@@ -168,6 +191,27 @@ const translations = {
         totalScore: 'Total Score',
         completionRate: 'Completion Rate',
         
+        // TRIZ Specific
+        trizTitle: 'TRIZ Technology',
+        trizFoundations: 'TRIZ Foundations',
+        trizPrinciples: '40 Inventive Principles',
+        contradictionMatrix: 'Contradiction Matrix',
+        practicalExamples: 'Practical Pedagogical Examples',
+        methodology: 'Methodology and Tools',
+        ideality: 'Ideality',
+        contradiction: 'Contradiction',
+        resources: 'Resources',
+        evolution: 'Evolution',
+        principles: 'Principles',
+        segmentation: 'Segmentation',
+        extraction: 'Extraction',
+        localQuality: 'Local Quality',
+        asymmetry: 'Asymmetry',
+        merging: 'Merging',
+        universality: 'Universality',
+        translation: 'Directional Characteristics',
+        dynamics: 'Dynamics',
+        
         // General
         loading: 'Loading...',
         error: 'Error',
@@ -176,13 +220,7 @@ const translations = {
         save: 'Save',
         edit: 'Edit',
         back: 'Back',
-        
-        // OS Specific
-        windows: 'Windows',
-        macos: 'macOS',
-        linux: 'Linux',
-        ios: 'iOS',
-        android: 'Android',
+        selectLanguage: 'Select Language',
     },
     ru: {
         // Navigation
@@ -194,8 +232,12 @@ const translations = {
         logout: 'Выход',
         language: 'Язык',
         
+        // Platform Title
+        platformTitle: 'Технология ТРИЗ - Платформа творческого мышления для педагогов',
+        platformSubtitle: 'Полная платформа обучения для развития методологии творческого мышления будущих педагогов',
+        
         // Login Page
-        loginTitle: 'Вход на платформу ОС',
+        loginTitle: 'Вход на платформу ТРИЗ',
         email: 'Email',
         password: 'Пароль',
         login: 'Вход',
@@ -260,6 +302,27 @@ const translations = {
         totalScore: 'Общий балл',
         completionRate: 'Процент завершения',
         
+        // TRIZ Specific
+        trizTitle: 'Технология ТРИЗ',
+        trizFoundations: 'Основы ТРИЗ',
+        trizPrinciples: '40 изобретательских принципов',
+        contradictionMatrix: 'Матрица противоречий',
+        practicalExamples: 'Практические педагогические примеры',
+        methodology: 'Методология и инструменты',
+        ideality: 'Идеальность',
+        contradiction: 'Противоречие',
+        resources: 'Ресурсы',
+        evolution: 'Эволюция',
+        principles: 'Принципы',
+        segmentation: 'Дробление',
+        extraction: 'Извлечение',
+        localQuality: 'Локальное качество',
+        asymmetry: 'Асимметрия',
+        merging: 'Объединение',
+        universality: 'Универсальность',
+        translation: 'Направленные характеристики',
+        dynamics: 'Динамичность',
+        
         // General
         loading: 'Загрузка...',
         error: 'Ошибка',
@@ -268,13 +331,7 @@ const translations = {
         save: 'Сохранить',
         edit: 'Редактировать',
         back: 'Назад',
-        
-        // OS Specific
-        windows: 'Windows',
-        macos: 'macOS',
-        linux: 'Linux',
-        ios: 'iOS',
-        android: 'Android',
+        selectLanguage: 'Выберите язык',
     }
 };
 

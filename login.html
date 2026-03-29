@@ -38,6 +38,32 @@
       font-weight: 600;
       cursor: pointer;
     }
+    
+    .language-selector {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .language-selector button {
+      padding: 8px 15px;
+      background: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+    
+    .language-selector button:hover {
+      background: #f0f0f0;
+    }
+    
+    .language-selector button.active {
+      background: #667eea;
+      color: white;
+    }
 
     .auth-card {
       background: white;
