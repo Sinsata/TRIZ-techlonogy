@@ -205,26 +205,4 @@ function changeLanguage(lang) {
     }
     
     localStorage.setItem('language', lang);
-    
-    // Dars matnlarini tarjima qilish (faqat index.html uchun)
-    if (lang !== 'uz' && typeof TranslationAPI !== 'undefined') {
-        setTimeout(() => {
-            TranslationAPI.translatePageContent(lang);
-        }, 300);
-    }
 }
-
-// Initial page load language setup
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('language') || 'uz';
-    i18n.setLanguage(savedLang);
-    document.documentElement.lang = savedLang;
-    i18n.updatePageText();
-    
-    // Dastlabki tarjima qilish
-    if (savedLang !== 'uz' && typeof TranslationAPI !== 'undefined') {
-        setTimeout(() => {
-            TranslationAPI.translatePageContent(savedLang);
-        }, 500);
-    }
-});

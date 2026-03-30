@@ -245,13 +245,6 @@
       document.documentElement.lang = lang;
       i18n.updatePageText();
       
-      // Sahifa elementlarini tarjima qilish
-      if (lang !== 'uz' && typeof TranslationAPI !== 'undefined') {
-        setTimeout(() => {
-          TranslationAPI.translatePageContent(lang);
-        }, 300);
-      }
-      
       localStorage.setItem('language', lang);
     }
 

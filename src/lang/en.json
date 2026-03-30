@@ -1,0 +1,202 @@
+{
+  "navbar": {
+    "dashboard": "Dashboard",
+    "courses": "Courses",
+    "forum": "Forum",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "footer": {
+    "platform": "TRIZ Technology - Pedagogical Creative Thinking Courses",
+    "createdBy": "Platform created by",
+    "createdByName": "Sinsata",
+    "createdFor": "created for",
+    "creatorName": "Nabiyeva Nigora",
+    "allRights": "2024 - All rights reserved"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "username": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "haveAccount": "Have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "invalidCredentials": "Invalid username or password",
+    "usernameTaken": "This username is already taken",
+    "passwordMismatch": "Passwords do not match",
+    "signupSuccess": "Sign up successful!"
+  },
+  "courses": {
+    "title": "TRIZ Courses",
+    "description": "Pedagogical Creative Thinking Courses",
+    "lessons": [
+      {
+        "id": 1,
+        "number": 1,
+        "name": "Ideal Model and Real Problem-Solving Using TRIZ Thinking",
+        "hours": 2,
+        "methodology": "Ideal Thinking Model (ITM) principle",
+        "applications": "Enhancing practical problem-solving for educators → real-world applications → sustainable solutions"
+      },
+      {
+        "id": 2,
+        "number": 2,
+        "name": "Building Teacher Professional Development Systems",
+        "hours": 2,
+        "methodology": "System analysis; Functional analysis",
+        "applications": "Understanding teacher competencies and effective educational approaches"
+      },
+      {
+        "id": 3,
+        "number": 3,
+        "name": "Diagnostic and Analysis of Teaching Methods",
+        "hours": 2,
+        "methodology": "Systematic design; cause-effect analysis",
+        "applications": "Analyzing teaching activities and understanding outcomes"
+      },
+      {
+        "id": 4,
+        "number": 4,
+        "name": "Methods for Developing Teacher Competencies",
+        "hours": 2,
+        "methodology": "Resource management; modeling",
+        "applications": "Proper development of professional skills"
+      },
+      {
+        "id": 5,
+        "number": 5,
+        "name": "Using Educational Technologies as Resources; Current Challenges and Solutions (Diagnostic)",
+        "hours": 4,
+        "methodology": "Multifunctional learning; ideal modeling",
+        "applications": "Integrating technology effectively in educational practice"
+      },
+      {
+        "id": 6,
+        "number": 6,
+        "name": "Teacher Professional Development Planning; Practical Tasks",
+        "hours": 2,
+        "methodology": "Strategic planning; individual performance analysis",
+        "applications": "Developing professional and personal competencies"
+      },
+      {
+        "id": 7,
+        "number": 7,
+        "name": "Individualized Approach in Teaching",
+        "hours": 2,
+        "methodology": "Strategic planning; individual learning solutions",
+        "applications": "Personalized guidance for each student"
+      },
+      {
+        "id": 8,
+        "number": 8,
+        "name": "Developing Teacher Innovation Using Educational Technologies",
+        "hours": 3,
+        "methodology": "Brainstorming; Brainstorming + TRIZ",
+        "applications": "Fostering innovation and analyzing teaching effectiveness"
+      },
+      {
+        "id": 9,
+        "number": 9,
+        "name": "Organization and Problem-Solving Methods for Students",
+        "hours": 2,
+        "methodology": "Contradiction analysis; role-playing",
+        "applications": "Dealing with challenges and optimal decision-making"
+      },
+      {
+        "id": 10,
+        "number": 10,
+        "name": "Advanced Contradictions and Healthy Lifestyle Development Methods",
+        "hours": 2,
+        "methodology": "Ideal human model",
+        "applications": "Forming values; healthy living through diverse applications"
+      },
+      {
+        "id": 11,
+        "number": 11,
+        "name": "Creative Problem-Solving in Teams",
+        "hours": 2,
+        "methodology": "Collective analytical thinking, problem-solving challenges",
+        "applications": "Developing analytical and collaborative skills"
+      },
+      {
+        "id": 12,
+        "number": 12,
+        "name": "Historical Development and System Building",
+        "hours": 2,
+        "methodology": "System analysis; contradictory elements; cycling",
+        "applications": "Developing analytical and organizational skills"
+      },
+      {
+        "id": 13,
+        "number": 13,
+        "name": "Using Educational Technologies in Teacher Professional Development",
+        "hours": 2,
+        "methodology": "Resource utilization; systematic approach",
+        "applications": "Qualitative skill development"
+      },
+      {
+        "id": 14,
+        "number": 14,
+        "name": "Developing Professional Knowledge in Teachers",
+        "hours": 2,
+        "methodology": "Self-reflection; cause-effect analysis",
+        "applications": "Professional growth through reflection"
+      },
+      {
+        "id": 15,
+        "number": 15,
+        "name": "Ensuring Teacher Professional Development Through Pedagogy",
+        "hours": 4,
+        "methodology": "Contradiction analysis; ideal systems",
+        "applications": "Understanding processes and teaching methods"
+      },
+      {
+        "id": 16,
+        "number": 16,
+        "name": "Developing Teacher Competencies Through Educational Methods",
+        "hours": 2,
+        "methodology": "Professional; functional analysis; problem tasks",
+        "applications": "Understanding competencies and their integration"
+      },
+      {
+        "id": 17,
+        "number": 17,
+        "name": "Pedagogical Implementation of Educational Technologies for Teachers",
+        "hours": 2,
+        "methodology": "Ideal performance model",
+        "applications": "Problem identification and development planning"
+      },
+      {
+        "id": 18,
+        "number": 18,
+        "name": "Methods for Organizing Teacher Professional Work",
+        "hours": 2,
+        "methodology": "Functional analysis; resource optimization",
+        "applications": "Efficient organization and performance improvement"
+      }
+    ]
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "download": "Download",
+    "upload": "Upload"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "welcome": "Welcome",
+    "goodbye": "Goodbye",
+    "selectLanguage": "Select Language"
+  }
+}
