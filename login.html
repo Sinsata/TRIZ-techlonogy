@@ -12,8 +12,9 @@
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -257,7 +258,7 @@
       <div class="form-section active" id="login-section">
         <div class="auth-header">
           <h2 data-i18n="loginTitle">Ta'lim Platformasiga Kirish</h2>
-          <p style="margin-top: 10px;">Operatsion Tizimlar</p>
+          <p style="margin-top: 10px;">TRIZ Tekhnologiyasi</p>
         </div>
         <div class="auth-body">
           <div class="error-message" id="login-error"></div>
@@ -333,8 +334,9 @@
   <script src="src/auth.js"></script>
   <script src="src/i18n.js"></script>
   <script>
-    // Set language selector to current language
-    document.addEventListener('DOMContentLoaded', () => {
+    // Initialize i18n and set language selector
+    document.addEventListener('DOMContentLoaded', async () => {
+      await i18n.init();
       document.getElementById('language-select').value = i18n.getLanguage();
     });
 

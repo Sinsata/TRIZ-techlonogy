@@ -10,9 +10,9 @@
     "platform": "TRIZ Texnologiyasi - Pedagogik Ijodiy Tafakkur Platformasi",
     "createdBy": "Platforma",
     "createdByName": "Sinsata",
-    "createdFor": "uchun tayyorlangan",
+    "createdFor": "tomonidan yaratilgan",
     "creatorName": "Nabiyeva Nigora",
-    "allRights": "2024 - Barcha huquqlar himoyalangan"
+    "allRights": "Barcha huquqlar himoyalangan"
   },
   "auth": {
     "login": "Kirish",
@@ -20,183 +20,195 @@
     "username": "Foydalanuvchi nomi",
     "password": "Parol",
     "confirmPassword": "Parolni tasdiqlash",
-    "haveAccount": "Akkauntingiz bormi?",
     "dontHaveAccount": "Akkauntingiz yo'qmi?",
+    "alreadyHaveAccount": "Allaqachon akkauntingiz bor?",
     "invalidCredentials": "Foydalanuvchi nomi yoki parol xato",
     "usernameTaken": "Bu foydalanuvchi nomi allaqachon olgan",
     "passwordMismatch": "Parollar mos kelmamoqda",
-    "signupSuccess": "Ro'yxatdan o'tish muvaffaqiyatli!"
+    "signupSuccess": "Ro'yxatdan o'tish muvaffaqiyatli bo'ldi!"
   },
-  "courses": {
-    "title": "TRIZ Kurslar",
-    "description": "Pedagogik Ijodiy Tafakkur Kurslari",
-    "lessons": [
-      {
-        "id": 1,
-        "number": 1,
-        "name": "Bo'lajak o'qituvchilarni sinf rahbari va tyutorlik faoliyatiga tayyorlash texnologiyasi",
-        "hours": 2,
-        "methodology": "Ideal Yalqinning Nafti (ITN) qaramashilkataml anglash",
-        "applications": "Sinf rahbari modeli → real vazifalar ilhash solitsirtiqalsh → muvofaqqiyatli yechimlarni shakllantirish"
-      },
-      {
-        "id": 2,
-        "number": 2,
-        "name": "Tarbiyachi mahorati tizimini shakllantirish",
-        "hours": 2,
-        "methodology": "Kastsir tahli; Funktsional tahli",
-        "applications": "O'qituvchining mahoratlarini anglash, ortiqcha etiqodlarni foydalanish"
-      },
-      {
-        "id": 3,
-        "number": 3,
-        "name": "Tarbiya jarayonini tashkil etishda o'qituvchining o'z-o'zini tekshirgan diagnostik vositalar",
-        "hours": 2,
-        "methodology": "Misomno daresi; anglash-oqibat tahli",
-        "applications": "O'z faoliyatini tahlil qilish va ko'nikmalarni anglash"
-      },
-      {
-        "id": 4,
-        "number": 4,
-        "name": "Tarbiyachi faoliyatining asosiy ko'nikmalarini shakllantirish metodlari",
-        "hours": 2,
-        "methodology": "Kichik qa'landir; modellistirish",
-        "applications": "Ko'nikmalarni to'g'ri shakllantirish va rivojlantirish"
-      },
-      {
-        "id": 5,
-        "number": 5,
-        "name": "Tarbiya texnologiyalarini qo'llashda pedagogik vositalardan foydalanish; Tarbiya ko'rganlikni aniqlash (diagnostika)",
-        "hours": 4,
-        "methodology": "Multifunktsional o'qitish; ideal modelistsi",
-        "applications": "Bitra vostaatni bir moddada mano'qdan hamda havolalt orqali anglash"
-      },
-      {
-        "id": 6,
-        "number": 6,
-        "name": "O'quvchilarni aqliy rivojlanishining yosh xususiyatlari va tashxis etish metodikalari",
-        "hours": 2,
-        "methodology": "Sharislytish tahli; individual mamontilashi yechlimlari",
-        "applications": "Fikshan va aqliy qobiliyatlarini anglash"
-      },
-      {
-        "id": 7,
-        "number": 7,
-        "name": "Tarbiyada individual yondashuv",
-        "hours": 2,
-        "methodology": "Sharislytish tahli; individual mamontilashi yechlimlari",
-        "applications": "Har bir o'quvchiga shaxsiy yondashaw"
-      },
-      {
-        "id": 8,
-        "number": 8,
-        "name": "O'qituvchi mahoratini rivojlantirishda innovatsion ta'lim texnologiyalarini qo'llash",
-        "hours": 2,
-        "methodology": "G'oya garamamtirishi; Brainstorming + TRIZ",
-        "applications": "Innovatsiyalarni rivojlantirish va dars chiqilishlaring tahlil qilish"
-      },
-      {
-        "id": 9,
-        "number": 9,
-        "name": "Tashkiliy va jamoaviy ishlarni tashkil etish metodikasi",
-        "hours": 2,
-        "methodology": "Qarama-qarshilamaon yechishe; rollinga qaratsh",
-        "applications": "Guruhning qaroriligi va optimal ta'qibati momammii"
-      },
-      {
-        "id": 10,
-        "number": 10,
-        "name": "Axloqiy tarbiyaviy ishlar va sog'lom turmush tarzini shakllantirish yo'llari",
-        "hours": 2,
-        "methodology": "Ideal insoon modeli",
-        "applications": "Vazifalarni yanglish; Hayotiy tarqalgan erqali etiqod qadriylatirisih shakllantirsh"
-      },
-      {
-        "id": 11,
-        "number": 11,
-        "name": "Guruhlarda ishlash texnologiyasi",
-        "hours": 2,
-        "methodology": "Kollektiv jisosiy yechim, muammonning topshiqlari trizolgan",
-        "applications": "Loysilaani varatishlada jisosiy va tanishli rivajlantirisih"
-      },
-      {
-        "id": 12,
-        "number": 12,
-        "name": "Tarbiyaviy loyihalarni shakllantirish",
-        "hours": 2,
-        "methodology": "Muammo; Qarama-qarshi shakli; itsiklash",
-        "applications": "Loysilaani varatishlada jisosiy va tanishli rivajlantirisih"
-      },
-      {
-        "id": 13,
-        "number": 13,
-        "name": "Pedagogik mahoratni oshirishda kompyuter texnologiyalaridan foydalanish",
-        "hours": 2,
-        "methodology": "Retsur sitfuda foydalanish, sitnotisya",
-        "applications": "Ragimli yostilami"
-      },
-      {
-        "id": 14,
-        "number": 14,
-        "name": "O'qituvchida kasbiy refleksiyani shakllantirish yo'llari",
-        "hours": 2,
-        "methodology": "O'z foloytaml tahli sabab-oqibat",
-        "applications": "Refleksiya orqali kasbiy rivajlanismi inqilobanismi"
-      },
-      {
-        "id": 15,
-        "number": 15,
-        "name": "Pedagogik tashxislash asosida o'qituvchining kasbiy rivojlanishini ta'minlash usullari",
-        "hours": 4,
-        "methodology": "Qarama-qarshilama; ideal anglash",
-        "applications": "To'rqular va o'qitishlairni anglash"
-      },
-      {
-        "id": 16,
-        "number": 16,
-        "name": "O'quvchilar qobiliyatlari va tarbiyalanganlik darajasini tashxislash usullari",
-        "hours": 2,
-        "methodology": "Kasbiy; Funktsional sahli; muammoni topshiqlar, muammoni vansifalar",
-        "applications": "Qobiliyat va unvayslanganilklari anglash"
-      },
-      {
-        "id": 17,
-        "number": 17,
-        "name": "Pedagogik maqsadni qo'yilishi va kasbiy kar'erani rivojlantirish",
-        "hours": 2,
-        "methodology": "Ideal leyara modeli",
-        "applications": "Muammoni belgalash va rivajlanismi rejasini turish"
-      },
-      {
-        "id": 18,
-        "number": 18,
-        "name": "O'qituvchi mehnatini nazariy va amaliy tashkil etish metodlari",
-        "hours": 2,
-        "methodology": "Funktsional tahli; resuslami optimal shakllantirilishi",
-        "applications": "Samarali tashkil etish, ortiqcha yakkamtrish yuksaltirish"
-      }
-    ]
-  },
-  "buttons": {
-    "save": "Saqlash",
-    "cancel": "Bekor qilish",
-    "delete": "O'chirish",
-    "edit": "Tahrir qilish",
-    "submit": "Yuborish",
-    "back": "Orqaga",
-    "next": "Keyingi",
-    "previous": "Oldingi",
-    "search": "Qidirish",
-    "filter": "Filtr",
-    "download": "Yuklab olish",
-    "upload": "Yuklash"
-  },
-  "messages": {
-    "loading": "Yuklanmoqda...",
-    "error": "Xato",
-    "success": "Muvaffaq",
-    "welcome": "Xush kelibsiz",
-    "goodbye": "Xayr",
-    "selectLanguage": "Tilni tanlang"
-  }
+  "loginTitle": "Ta'lim Platformasiga Kirish",
+  "signupTitle": "Ro'yxatdan O'tish",
+  "lessons": [
+    {
+      "id": 1,
+      "number": 1,
+      "name": "TRIZ Texnologiyasiga Kirish: Tarix va Asosiy Tamoyillari",
+      "description": "TRIZ (Inventiv Problem Yechish Teoriyasi) - bu ilmiy va sistemli yondashuv bo'lib, murakkab muammolarni ijodiy ravishda hal qilish uchun qo'llaniladi. Ushbu dars TRIZ'ning tarixiy kelib chiqishi, uni yaratuvchi Genrikh Altshuller va uning asosiy g'oyalari haqida batafsil ma'lumot beradi. TRIZ 1956-yilda yaratilgan bo'lib, o'shandan beri dunyoning eng yetakchi kompaniyalari, universitet va tadqiqot laboratoriyalarida qabul qilingan. Ushbu kurs TRIZ'ning negizida yotgan tamoyillari, ijodiy fikrlash psixologiyasi, va muammoni strukturali shaklda ifodalash usullarini o'rgatadi. Talabalar TRIZ'ning 40 ta inventiv prinsipi, qarama-qarshi matritsa, va ideal yakuniy natija kontseptsiyalari bilan tanishadi. Ushbu darsning maqsadi TRIZ'ni boshqa fanlardan farqlashtirish va uning qiymati haqida chuqur tushunishdir.",
+      "hours": 2,
+      "methodology": "Tarixiy tahlil, Tarix tekst analizi, Kontseptual modellar",
+      "applications": "Ijodiy fikrlash, Muammo yechish, Texnik innovatsiya"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "name": "Muammo va Qarama-Qarshi Talablar: TRIZ'ning Asosiy Tarkibiy Qismi",
+      "description": "Butun dunyodagi texnik muammolar qismida qarama-qarshi talablardan iborat. Masalan, avtomobil qanday bo'lsin - tez, lekin xavfsiz; qat'i, lekin yengil; arzon, lekin sifatli? Bu batafsil niqoblar TRIZ asosida 'qarama-qarshi muammolar' deb atalatadi. Ushbu darsda TRIZ'ning eng kuchli asboblari - qarama-qarshi muammolarni aniqlash va hal qilish usuli batafsil o'rganiladi. TRIZ qarama-qarshi matritsasi (39x39) - bu matematiklikcha tuzilgan jadval bo'lib, har bir qatorida takommalashtirilishi kerak bo'lgan parametr, har bir ustunga esa shu takommalashtirishdagi kerakli ta'sir ifodalanadi. Masalan, 'qat'iligi' (1-parametr) takommalashtirilganda 'og'irligi' (8-parametr) yomonlashish mumkin. Matritsa hujayrasida eng mos TRIZ prinsipi yozilgan. Talabalar haqiqiy dunyodagi muammolarni tahlil qilish va matritsani qo'llash amaliyotini ko'paytiramiz.",
+      "hours": 2,
+      "methodology": "Qarama-qarshi matritsa analizi, Parametr tahlili, Yechim tanlash",
+      "applications": "Texnik muammolar hal qilish, Parametrlar optimizatsiyasi, Innovativ dizayn"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "name": "TRIZ'ning 40 Inventiv Prinsipi va Ularning Amaliy Qo'llanilishi",
+      "description": "TRIZ'ning eng mashxur va foydali qismi - 40 ta inventiv prinsipi. Bu prinsiplar Genrikh Altshuller tomonidan yuzlab millionlab patent va texnik yechimlarni tahlil qilgan natijasida chiqarilgan. Masalan, 'Bo'linish prinsipi' - tizimni kichik bo'laklarga ajratish orqali muammoni hal qilish. 'Kombinatsiya prinsipi' - turli xil tizimlarni, materiallarni yoki usullarni birlashtirish. 'Multifunktsionallik prinsipi' - bitta element ko'plab funktsiyalarni bajarish. 'Simmetriya prinsipi' - tizimning symmetrik holi o'ylash. Ushbu darsda barcha 40 ta prinsipi batafsil o'rganiladi, har birining fizik asoslari, muammolarni hal qilishda qo'llanilishi, va amaliy misollar keltiriladi. Talabalar o'z sohasidagi haqiqiy muammolarga mos prinsiplarni tanlash va ularni qo'llash o'rganadi.",
+      "hours": 3,
+      "methodology": "Prinsipl katalog, Misol tahlili, Amaliy qo'llaniluv",
+      "applications": "Inventiv yechimlar topish, Texnik innovatsiya, Muammoni hal qilish"
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "name": "Ideallashtirish Kontseptsiyasi va Ideal Yakuniy Natija (IYN)",
+      "description": "TRIZ'ning eng muhim fikri - tizimni ideallashtirish. Ideal Yakuniy Natija (IYN) bu taasavvur bo'lib, unda muammo o'zi mavjud bo'lmaganda yechim o'zi amalga oshadi. Masalan, xona issiq bo'lsa, ohladigan sistema o'zi harakatlansa - bu IYN. Yoki mashina koliksini tekshiruvchi sistema noto'g'ri parchalarni o'zi o'chirib tashsa va to'g'ri parchalarni to'plasa - bu ideal. Ushbu darsda IYN kontseptsiyasi, resurslarni maksimal foydalanish, va super-tizim kontseptsiyasi o'rgatiladi. IYN taasavvuri inzhinerlarga to'g'ri yo'lni ko'rsatib, noto'g'ri yo'llardan chetlashtirib, vaqtni va xarajatlarni tejaydi. Talabalar o'z sohasidagi muammalarni IYN perspektivasidan qayta tahlil qilish o'rganadi.",
+      "hours": 2,
+      "methodology": "Ideallashtirish usuli, Tizim tahlili, Maqsad belgilash",
+      "applications": "Maqsad aniqlanishi, Strategiya ishlab chiqish, Resurs optimizatsiyasi"
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "name": "Ressurslar Tahlili va Optimal Foydalanish Strategiyalari",
+      "description": "Har qanday tizim, mahsulot yoki jarayonda mavjud bo'lgan resurslar bor. TRIZ ressurslarni ikki katta guruhga bo'ladi: 1) Tizim ichidagi mavjud resurslar (material, energiya, vaqt, mexanik qurilmalar), 2) Atrofidagi barkaror resurslar (atrof-muhit, tabiat, odamlar, informatsiya). Ko'plab texnik muammolar aslida yangi resurslar qo'shmasdan, faqat mavjud ressurlarni boshqacha tashkil qilish yoki ishlatish orqali hal qilinadi. Ushbu darsda resurs tahlili, ularning potentsialini aniqlash, va optimal foydalanish strategiyalari batafsil o'rganiladi. Talabalar ushbu darsdan o'tib, o'z sohasidagi muammalarni hal qilishda qanday resurslardan foydalanish mumkinligini aniqlay oladi va xarajatni kamaytira biladi.",
+      "hours": 2,
+      "methodology": "Resurs katalogi, Potensial tahlili, Optimallashtirlash",
+      "applications": "Xarajatlarni kamaytirish, Samarali ishlatish, Takommalashtirlash"
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "name": "Tizim Rivojlanishining Qonuniyatlari va Takommalashtirlash Trendlari",
+      "description": "TRIZ asosiy farziyalaridan biri - barcha tizimlar bepatterni bo'lmay, muayyan qonuniyatlarga ko'ra rivojlanadi. Masalan, avarq avtomobil oddiy struktura ega edi, keyin mummuq, so'ngra yana sodda bo'ldi (maslullash texnologiyasi). TRIZ sakkizta asosiy takommalashtirlash trendini aniqladi: 1) Tizim rivojlanishining 'S' shaklida qaysidagi biologi; 2) Dinamiklik ko'payishi; 3) Nezalosovkayin darajasining ortishi; 4) Tizim kontseptsiyasining o'zgarishi; 5) Kvanttatif o'zgarishlarning sifatli o'zgarishlarga aylanishi; 6) Subsistemalarning turli xil baholashiga kelib chiqishi; 7) Tizimning super-tizim bilan aloqadorligining ortishi; 8) Tizimning neerg (energy) sarfi, quvvati, tezligi ortishi. Ushbu trendlarni bilish geleoloji talab va muammolarni oldini olish imkonini beradi. Talabalar trendlarni o'z sohasida tahlil qilishi va kelajakdagi o'zgarishlarni bashorat qilishi o'rganadi.",
+      "hours": 3,
+      "methodology": "Tarixiy analiz, Trend tahlili, Prognoz qilish",
+      "applications": "Kelajak rivojlanish bashoratlash, Strategik reja, Takommalashtirlash yo'li"
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "name": "Muammo Sxemasi (Funktsional Analiz) va Tizim Modelni Tuzish",
+      "description": "Murakkab tizimlarni tushunish uchun, avvalo tizimning barcha funktsiyalarini aniqlash va ularni tasviriy shaklda ifodalash kerak. Funktsional Analiz (FAST - Functional Analysis System Technique) - bu tizimning har bir qismi, elementning vazifasi, o'zaro ta'siri va bog'lanishlarini diagramma shaklida ifodalash usuli. Ushbu darsda muammo sxemasi tayyorlash, qisim-qisim funktsiyalarni belgilash, tizim qismlari o'rtasida bog'lanishlarni tahlil qilish o'rgatiladi. Muammo sxemasi tayyorlangan vaqtdan keyin TRIZ'ning boshqa vositalari samarali ishlay boshlaydi. Ushbu tizim tahlili muammoni real miqdoru, salohiyati va chegaralarini aniqlashda yordam beradi.",
+      "hours": 2,
+      "methodology": "Funktsiya tahlili, FAST usuli, Diagramma tuzish",
+      "applications": "Tizim boshlanuvchisi, Muammo strukturasi, Qismlashtirlash"
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "name": "Vaqt Faktori, Faza Separatsiyasi va O'zgarish Mexanizmi",
+      "description": "Tizimlar statik emas, dinamik va vaqt bo'yicha o'zgaruvchan. TRIZ'da vaqt faktori muhim rol o'ynaydi. Bitta muammoning yechimi vaqt bo'yicha turli xil bosqichlarda amalga oshirilishi mumkin - bu 'vaqt separatsiyasi' (Time and Phase Separation) deb atalatadi. Masalan, suv issiq bo'lsa bug'lanib ketadi, lekin suvchan tabiatning parchasi issiq bo'lmaydi - vaqt bo'ylab ajtarilishi. Tizimlarning vaqt bo'yicha ritmini, harmoniyasini, tebranishini tushunish muhim. TRIZ'da resonansi (harmonik tebranish) juda muhim rol o'ynaydi. Ushbu darsda vaqt berseslik, ritmik tahlil, va o'zgarish mexanizmilari o'rganiladi. Talabalar vaqt tamoyillari asosida muammolarni hal qilish o'rganadi.",
+      "hours": 2,
+      "methodology": "Vaqt tahlili, Ritmik tahlil, Faza saparatsi",
+      "applications": "Dinamik muammolar, O'zgarish mexanizmi, Vaqt rejasi"
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "name": "Mikro va Makro Darajada Yechimlar va Skalalar",
+      "description": "Ayrim muammolar mikro darajada (molekulyar, atom, nanoteknologiya darajasi), boshqalari makro darajada (ko'zga ko'rinadigan, insan darajasi) hal qilinadi. TRIZ bu ikki darajaning kombinatsiyasini tavsiya qiladi. Masalan, nanoteknologiya mikro darajada qanday qilish mumkinligini ko'rsatib beradi, lekin makro darajada qanday ta'sir etishini bilish ham kerak. Tizim strukturasi turli skalada turli xilda bo'lishi mumkin. Ushbu darsda turli darajadagi yechimlar, ularning afzalliklari va cheklanishlari o'rganiladi. Talabalar muammoni mikro va makro darajalarida tahlil qila oladi.",
+      "hours": 2,
+      "methodology": "Skala tahlili, Multi-level yondashuv, Darajali modellar",
+      "applications": "Nanoteknologiya, Makro dizayn, Tizim integratsiyasi"
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "name": "Texnologiyalar va Sohalar o'rtasida Ma'lumot Transferi",
+      "description": "TRIZ'ning eng kuchli tomoni - bir sohadagi yechimni boshqa sohasida qo'llash imkoni. Masalan, biologiyada mavjud bo'lgan struktura (masalan, sadu qanotlari aeroinamikasi) texnikada qo'llanishi mumkin (samolyot qanotlari). Raqam shakali bo'rtasmalarining tizimi mexanik tizimlarda qo'llaniladi. Biyomimikrya (biomimicry) - tabiatdan ilhom olgan texnologiyalar bu kontekstda asosiy. Ushbu darsda turli sohalardagi yechimlarni tahlil qilish, ularning o'zaro aloqadorligini topish, va transfer qilish o'rgatiladi. Talabalar birlashgan yondashuv (cross-industry innovation) o'rganadi.",
+      "hours": 2,
+      "methodology": "Interdisiplinar analiz, Yechim transferi, Taqqoslashtirish",
+      "applications": "Innovatsiya amaliyoti, Soha-bo'yicha sintez, Biyomimikrya"
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "name": "Prototip Yaratish, Tezlik Eksperimenti va Iterativ Takommalashtirlash",
+      "description": "Yechimni amalga oshirish uchun, ko'pincha prototip tayyorlash kerak. TRIZ asosida tezkorlik tajriba va iterativ takommalashtirlash qo'llaniladi. Ushbu darsda prototip yaratishning bosqichlari, testlash metodikasi, va tez o'zgarish strategiyasi o'rgatiladi. Agile va Lean metodologiyalar TRIZ asoslari bilan tutashadi. Prototip qanday bo'lsin: qog'oz modeli, kompyuterli simulyatsiya, yoki haqiqiy shakal. Ushbu darsda talabalar chuqur tahlildan keyin tezkor eksperiment qilish, natijalarni tahlil qilish, va qayta takommalashtirlash o'rganadi. Ushbu sikl takroriy takommalashtirlash siklini taasavvur qiladi.",
+      "hours": 2,
+      "methodology": "Prototip metodikasi, Tez iteratsiya, Tajriba tahlili",
+      "applications": "Amaliy ishlanma, Mahsulot takommalashtirlash, Bozor kiritish"
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "name": "Risklar, Cheklanishlar va Etik Masalalar TRIZ'da",
+      "description": "Har qanday yechimda risklar, qonuniy cheklanishlar va etik muammo bo'lishi mumkin. TRIZ bu aspektlarni ham hisobga oladi. Ushbu darsda xavf-xatar tahlili (Risk Analysis), qonun va standartlar cheklanishlari, hamda ushbu cheklanishlarni hisobga olib yechim qidirish o'rgatiladi. Masalan, avtomobil mexanizmi xavfsizlik standartlarini qo'llashi kerak. Ilovatka ekologik ta'siriga ham e'tibor berishi kerak. Talabalar ijodiy fikrlash bilan mas'uliy fikrlashni kombinatsiyalashtiradi. Etik innovatsiya - bu yangi tizim odamlar uchun, muhit uchun xavfli bo'lmasligi kerak.",
+      "hours": 2,
+      "methodology": "Risk tahlili, Etik qaror, Qonun cheklanishlari",
+      "applications": "Samarali takommalashtirlash, Mas'uliy innovatsiya, Standartlar moslashishi"
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "name": "TRIZ Dasturiy Ta'minoti va Kompyuterli Vositalar",
+      "description": "Bugungi kunida TRIZ metodologiyasi ko'plab kompyuterli dasturiy ta'minotlar asosida amalga oshiriladi. Ushbu darsda mashhur TRIZ dasturlari, ularning funktsiyalari, va qo'llanilishi o'rgatiladi. Masalan, iGrafx TRIZ - qarama-qarshi matritsani kompyuterda ishlati; TRIZ Master - 40 ta prinsipi va misollar; QFD dasturi - talablarni texnik talablarga aylantirish. Python va R dasturiy tili TRIZ algoritmlari uchun ham qo'llaniladi. Talabalar kompyuterli vositalar orqali qarama-qarshi matritsani topish, muammo modelini yaratish, va yechim qidirish o'rganadi. Dasturiy ta'minot tahlilni tezlashtiradi va aniqligini oshiradi.",
+      "hours": 2,
+      "methodology": "Dasturiy ta'minot, Kompyuterli simulyatsiya, Algoritm tahlili",
+      "applications": "Avtomatik tahlil, Tez yechim qidirish, Ma'lumot bazasi"
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "name": "TRIZ'ni Texnikada Qo'llash: Mashinasozlik va Mexanika",
+      "description": "Mashinasozlik va mexanika TRIZ'ning asosiy qo'llaniluv sohasidur. Ushbu darsda automobil dizayni, elektr motorlar, насoslar, kompressorlar kabi texnik tizimlarning muammolari TRIZ asosida hal qilinishini o'rganiladi. Masalan, avtomobil motori kuchli bo'lishi kerak lekin yengil - qarama-qarshi muammo. Transmissiya tezligi va kuchmaning balansini topish TRIZ qarama-qarshi matritsa orqali hal qilinadi. Texnik loyihalashda TRIZ vositalari inzhinerlarga vaqt va xarajatlarni tejashda yordam beradi. Talabalar haqiqiy dunyodagi mashinasozlik muammolarini TRIZ bilan hal qilishni o'rganadi.",
+      "hours": 2,
+      "methodology": "Texnik tahlil, Loyiha metodikasi, Simulyatsiya",
+      "applications": "Avtomobil industriyasi, Mexanik tizimlar, Energiya sohasi"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "name": "TRIZ'ni Biologiya, Tibbiyot va Farmakologiyada Qo'llash",
+      "description": "TRIZ faqat mexanika emas, biologiya va tibbiyotda ham qo'llaniladi. Ushbu darsda TRIZ asosida tibbiyot muammolarini hal qilish o'rganiladi. Masalan, dori qanday bo'lsin - samarasizbak lekin ta'siri kuch, ya xavfli ta'sir bo'lmasi kerak. Tibbiyot vositalari, imizatsiya usullari, kirurgikal mexanizmlar TRIZ asosida takommalashtiriladi. Biyologiyada tabiat o'zini asli yaxshi echilgan TRIZ asoslari bilan ishlaydi. Talabalar biologik tizimlarning TRIZ tamoyillaridan qanday foydalanatganini va bu bilimlarni yangi dori ishlab chiqarishda qo'llashni o'rganadi.",
+      "hours": 2,
+      "methodology": "Biologia tahlili, Tibbiy muammolar, Eksperimental metod",
+      "applications": "Dori ishlab chiqish, Tibbiyot texnologiyalari, Biologik takommalashtirlash"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "name": "TRIZ'ni Elektronika, Kompyuterlar va Dasturiy Ta'minotda Qo'llash",
+      "description": "Elektronika va IT texnologiyalari TRIZ'ning yangi qo'llaniluv sohasi. Ushbu darsda chip dizayni, signalli qayta ishlash, kompyuterli algoritm takommalashtirlash TRIZ asosida hal qilinishini o'rganiladi. Masalan, protsessor tezligi ortishi issiqligi, kuvi va xarajatni oshiradi - qarama-qarshi muammo. TRIZ asosida bu muammoni hal qilish ushbu darsda o'rgatiladi. Kompyuterli dastur murakkab, lekin tez ishlashi kerak - bu ham qarama-qarshi. Talabalar IT muammolarini TRIZ bilan hal qilishni o'rganadi.",
+      "hours": 2,
+      "methodology": "IT tahlili, Algoritm optimizatsiyasi, Arxitektura takommalashtirlash",
+      "applications": "Chip dizayni, Dastur optimizatsiyasi, Algoritm takommalashtirlash"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "name": "Jamoaviy Ijodiy Ishlash va TRIZ Brainstorming",
+      "description": "TRIZ asosida muammolarni guruh tarzida hal qilishda, jamoani to'g'ri tashkil qilish muhim. Ushbu darsda TRIZ-focused brainstorming, jamoa dinamikasi, va ijodiy atmosfera yaratish o'rgatiladi. Ijodiy jamoaga kirgan har bir shaxs o'z nuqtai nazarini, tajribasini keltiradi - bu TRIZ yechimlarini yanada boi va chuqurroq qiladi. Ushbu darsda talabalar brainstorming sessiyasini qanday tashkil qilish, har bir jamoachi a'zosining rol va mas'uliyatlarini qanday belgilash, TRIZ prinsipilarini jamoa munozarasi asosida qanday qo'llash o'rganadi. Yaxshi ta'limlangan jamoa ko'proq ijodiy va samarali yechimlarni topadi.",
+      "hours": 2,
+      "methodology": "Jamoa dinamikasi, Brainstorming, Munozara boshlanuvchisi",
+      "applications": "Muammo yechish guruhlar, Korporativ innovatsiya, Ixtira laboratoriyalari"
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "name": "TRIZ va Kelajak: Artificial Intellekt, Robototexnika va Automatika",
+      "description": "Bugungi dunyo tezkor o'zgarishlar, artificial intellekt, robototexnika va global muammolar bilan duch kelmoqda. TRIZ ushbu kelajak muammolarini hal qilishda asosiy rol o'yna oladi. Ushbu darsda TRIZ'ning kelajakdagi tadbiq sohalari, AI tizimlarini TRIZ bilan takommalashtirlash, robototexnika muammolarini hal qilish o'rgatiladi. Masalan, robot qanday bo'lsin - kuchli, lekin ehtiyotkorlik; tez, lekin aniq. Bu muammolar TRIZ asosida hal qilinadi. Talabalar TRIZ'ning kelajakdagi rivojlanish imkoniyatlarini, XXI asr muammolarini hal qilishda roli haqida tahliliy maqolalar o'rganadi.",
+      "hours": 2,
+      "methodology": "Kelajak prognozi, AI tahlili, Strategik rejaplanlashtirlash",
+      "applications": "AI takommalashtirlash, Robototexnika, Avtomatik tizimlar"
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "name": "TRIZ Sertifikatsiyasi va Professional Litsenziyasi",
+      "description": "TRIZ mutaxassislarining professional iqtidori rasmiy sertifikatlar bilan tasdiqlanadi. Ushbu darsda international TRIZ sertifikatsiya dasturlari, sinov formatlari, va professional standarları o'rganiladi. Level 1 - asosiy, Level 2 - o'rta, Level 3 - yuqori, Level 4 - expert darajalarr TRIZ sertifikatsiyasi mavjud. TRIZ sertifikatsiyasi olgan mutaxassislar korporativlarda innovatsiya rahbarlari, TRIZ tarbiyachilari, muammo yechish mutaxassislari bo'lib ishlaydi. Ushbu darsda talabalar sertifikatsiya uchun tayyorlana boshlaydi, sinovga nima kerakligini va kasbiy rivojlanish yo'lini tushunadi.",
+      "hours": 2,
+      "methodology": "Sertifikatsiya standartlari, Sinovni tayyorlash, Kasbiy rivojlanish",
+      "applications": "Professional litsenziyasi, Kasbiy sertifikatsiya, Istiqomat amaliyoti"
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "name": "Amaliy Loyihalar va Haqiqiy Dunyodagi TRIZ Yechimlar",
+      "description": "Ushbu oxirgi darsda, talabalar o'z sohasidan haqiqiy va murakkab muammo tanlash va uni TRIZ metodologiyasi asosida to'lig hal qilishni amalga oshiradi. Har bir muammo uchun, talabalar muammo tahlili (funktsiy analiz), TRIZ prinsipilarini tanlash, qarama-qarshi matritsani qo'llash, prototip tayyorlash, va natijalarni taqdim qiladi. Ushbu loyihalar talabalarning TRIZ bilimini real masalalarda qo'llashining imkoni beradi. Loyihalar ba'zan katta korporativli muammolarni hal qiladi va asliy innovations yaratadi. Ushbu kursnig oxirida talabalar TRIZ bo'yicha to'liq bilimi bilan, kasbiy ham, shaxsiy ham ijodiy masalalarni hal qilishni o'zlashtiradi.",
+      "hours": 4,
+      "methodology": "Amaliy qo'llaniluv, Loyiha menejmenti, Natija taqdimoti",
+      "applications": "Real yechimlar, Korporativ innovatsiya, Masalalari hal etish"
+    }
+  ]
 }

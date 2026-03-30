@@ -7,12 +7,12 @@
     "logout": "Logout"
   },
   "footer": {
-    "platform": "TRIZ Technology - Pedagogical Creative Thinking Courses",
-    "createdBy": "Platform created by",
+    "platform": "TRIZ Technology - Pedagogical Creative Thinking Platform",
+    "createdBy": "Platform",
     "createdByName": "Sinsata",
-    "createdFor": "created for",
+    "createdFor": "created by",
     "creatorName": "Nabiyeva Nigora",
-    "allRights": "2024 - All rights reserved"
+    "allRights": "All rights reserved"
   },
   "auth": {
     "login": "Login",
@@ -20,161 +20,36 @@
     "username": "Username",
     "password": "Password",
     "confirmPassword": "Confirm Password",
-    "haveAccount": "Have an account?",
     "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
     "invalidCredentials": "Invalid username or password",
     "usernameTaken": "This username is already taken",
     "passwordMismatch": "Passwords do not match",
     "signupSuccess": "Sign up successful!"
   },
-  "courses": {
-    "title": "TRIZ Courses",
-    "description": "Pedagogical Creative Thinking Courses",
-    "lessons": [
-      {
-        "id": 1,
-        "number": 1,
-        "name": "Technology to Prepare Future Teachers for Classroom Leadership and Tutoring Activities",
-        "hours": 2,
-        "methodology": "Ideal Final Result (IFR) Analysis",
-        "applications": "Classroom leadership model development → application to real situations → formation of successful teaching methods"
-      },
-      {
-        "id": 2,
-        "number": 2,
-        "name": "Forming the System of Teacher Mastery",
-        "hours": 2,
-        "methodology": "System analysis; Functional analysis",
-        "applications": "Understanding teacher competencies, effective use of pedagogical approaches"
-      },
-      {
-        "id": 3,
-        "number": 3,
-        "name": "Diagnostic Tools for Teacher Self-Assessment in Educational Process Organization",
-        "hours": 2,
-        "methodology": "Problem analysis; Cause-effect analysis",
-        "applications": "Self-assessment of activities and skill development"
-      },
-      {
-        "id": 4,
-        "number": 4,
-        "name": "Methods for Forming Basic Teacher Activity Skills",
-        "hours": 2,
-        "methodology": "Skill building; Modeling",
-        "applications": "Proper formation and development of core competencies"
-      },
-      {
-        "id": 5,
-        "number": 5,
-        "name": "Using Pedagogical Tools in Applying Educational Technologies; Determining Learning Outcomes (Diagnostics)",
-        "hours": 4,
-        "methodology": "Multifunctional learning; Ideal modeling",
-        "applications": "Integration of tools for comprehensive assessment of learning effectiveness"
-      },
-      {
-        "id": 6,
-        "number": 6,
-        "name": "Age-Related Characteristics of Student Intellectual Development and Diagnostic Methods",
-        "hours": 2,
-        "methodology": "Comparative analysis; Individual assessment methods",
-        "applications": "Understanding intellectual development and assessment strategies"
-      },
-      {
-        "id": 7,
-        "number": 7,
-        "name": "Individual Approach in Education",
-        "hours": 2,
-        "methodology": "Differentiated strategies; Individual learning solutions",
-        "applications": "Personalized instruction for each student"
-      },
-      {
-        "id": 8,
-        "number": 8,
-        "name": "Applying Innovative Educational Technologies in Teacher Mastery Development",
-        "hours": 2,
-        "methodology": "Idea generation; Brainstorming + TRIZ",
-        "applications": "Innovation development and lesson outcome analysis"
-      },
-      {
-        "id": 9,
-        "number": 9,
-        "name": "Methods for Organizing Organizational and Collective Work",
-        "hours": 2,
-        "methodology": "Conflict resolution; Collaborative organization",
-        "applications": "Group cohesion and optimal collaborative outcomes"
-      },
-      {
-        "id": 10,
-        "number": 10,
-        "name": "Ways to Form Moral Education and Healthy Lifestyle Development",
-        "hours": 2,
-        "methodology": "Ideal human model",
-        "applications": "Value formation; Development of healthy lifestyle through practical applications"
-      },
-      {
-        "id": 11,
-        "number": 11,
-        "name": "Technology for Working in Groups",
-        "hours": 2,
-        "methodology": "Collective problem-solving; Group-based TRIZ application",
-        "applications": "Development of collaborative and analytical skills in projects"
-      },
-      {
-        "id": 12,
-        "number": 12,
-        "name": "Forming Educational Projects",
-        "hours": 2,
-        "methodology": "Problem-based approach; Contradiction analysis; Iterative cycles",
-        "applications": "Development of project management and organizational skills"
-      },
-      {
-        "id": 13,
-        "number": 13,
-        "name": "Using Computer Technologies in Improving Teacher Mastery",
-        "hours": 2,
-        "methodology": "Resource analysis; Decision-making methodology",
-        "applications": "Effective technology integration in education"
-      },
-      {
-        "id": 14,
-        "number": 14,
-        "name": "Ways to Develop Professional Reflection in Teachers",
-        "hours": 2,
-        "methodology": "Self-reflection; Cause-effect analysis",
-        "applications": "Professional development through reflective practice"
-      },
-      {
-        "id": 15,
-        "number": 15,
-        "name": "Methods to Ensure Teacher Professional Development Based on Pedagogical Diagnostics",
-        "hours": 4,
-        "methodology": "Contradiction analysis; Ideal systems approach",
-        "applications": "Understanding processes and effective teaching methods"
-      },
-      {
-        "id": 16,
-        "number": 16,
-        "name": "Methods for Diagnosing Student Abilities and Educational Achievement Levels",
-        "hours": 2,
-        "methodology": "Professional assessment; Functional analysis; Problem identification",
-        "applications": "Understanding student capabilities and achievement assessment"
-      },
-      {
-        "id": 17,
-        "number": 17,
-        "name": "Setting Pedagogical Goals and Professional Career Development",
-        "hours": 2,
-        "methodology": "Ideal outcome modeling",
-        "applications": "Goal setting and career development planning"
-      },
-      {
-        "id": 18,
-        "number": 18,
-        "name": "Theoretical and Practical Methods for Organizing Teacher Work",
-        "hours": 2,
-        "methodology": "Functional analysis; Resource optimization",
-        "applications": "Efficient work organization and productivity improvement"
-      }
+  "loginTitle": "Login to Learning Platform",
+  "signupTitle": "Sign Up",
+  "lessons": [
+      {"id":1,"number":1,"name":"Introduction to TRIZ: History and Fundamental Principles","description":"TRIZ (Theory of Inventive Problem Solving) is a scientific and systematic approach to solving complex problems creatively. This course provides comprehensive information about the historical origins of TRIZ, its creator Genrikh Altshuller, and his foundational ideas. TRIZ was created in 1956 and has since been adopted by leading companies worldwide.","hours":2,"methodology":"Historical analysis, Text analysis, Conceptual models","applications":"Creative thinking, Problem solving, Technical innovation"},
+      {"id":2,"number":2,"name":"Problems and Contradictory Requirements: TRIZ's Core Component","description":"Technical problems are composed of contradictory requirements. TRIZ's contradiction matrix (39x39) is a mathematically structured tool where each row represents a parameter to be improved, and each column represents the undesired effect of that improvement. This course details TRIZ's most powerful tool.","hours":2,"methodology":"Contradiction matrix analysis, Parameter analysis, Solution selection","applications":"Technical problem solving, Parameter optimization, Innovative design"},
+      {"id":3,"number":3,"name":"TRIZ's 40 Inventive Principles and Their Practical Applications","description":"The 40 inventive principles were developed by analyzing hundreds of patents. Principles like 'Segmentation,' 'Combination,' and 'Multifunctionality' are explained with practical examples. This course details all 40 principles and their physical foundations.","hours":3,"methodology":"Principle catalog, Example analysis, Practical application","applications":"Finding inventive solutions, Technical innovation, Problem solving"},
+      {"id":4,"number":4,"name":"Idealization Concept and Ideal Final Result (IFR)","description":"One of TRIZ's most important ideas is system idealization. Ideal Final Result is a concept where the problem solves itself. This course teaches the IFR concept and how it guides engineers toward correct solutions.","hours":2,"methodology":"Idealization method, System analysis, Goal setting","applications":"Goal clarification, Strategy development, Resource optimization"},
+      {"id":5,"number":5,"name":"Resource Analysis and Optimal Utilization Strategies","description":"Every system has available resources. TRIZ categorizes resources into system resources and environmental resources. Many problems can be solved by reorganizing existing resources without adding new ones. This course details resource analysis and optimal utilization strategies.","hours":2,"methodology":"Resource catalog, Potential analysis, Optimization","applications":"Cost reduction, Efficient utilization, Improvement"},
+      {"id":6,"number":6,"name":"System Evolution Laws and Improvement Trends","description":"TRIZ identifies eight fundamental improvement trends that systems follow. Understanding these trends enables prediction and prevention of problems. Students learn to analyze trends in their field and forecast future changes.","hours":3,"methodology":"Historical analysis, Trend analysis, Forecasting","applications":"Future development prediction, Strategic planning, Improvement pathway"},
+      {"id":7,"number":7,"name":"Problem Schemes (Functional Analysis) and System Modeling","description":"To understand complex systems, it's essential to identify all functions and represent them visually. Functional Analysis (FAST) is a method of diagramming each system component's role and interactions. Once the problem scheme is created, other TRIZ tools become more effective.","hours":2,"methodology":"Function analysis, FAST method, Diagram creation","applications":"System decomposition, Problem structure, Componentization"},
+      {"id":8,"number":8,"name":"Time Factor, Phase Separation, and Change Mechanisms","description":"Systems are dynamic and change over time. Time plays an important role in TRIZ. A single problem's solution can be implemented at different time phases. This course teaches time analysis, rhythmic analysis, and phase separation principles.","hours":2,"methodology":"Time analysis, Rhythmic analysis, Phase separation","applications":"Dynamic problems, Change mechanisms, Time scheduling"},
+      {"id":9,"number":9,"name":"Solutions at Micro and Macro Scales and Scaling","description":"Some problems are solved at the micro-scale while others are solved at the macro-scale. TRIZ recommends combining both scales. This course teaches solutions at various scales and their advantages and limitations.","hours":2,"methodology":"Scale analysis, Multi-level approach, Hierarchical models","applications":"Nanotechnology, Macro design, System integration"},
+      {"id":10,"number":10,"name":"Information Transfer Between Technologies and Domains","description":"TRIZ's greatest strength is applying solutions from one field to another. Biomimicry - technologies inspired by nature - is central to this concept. This course teaches analyzing solutions from different fields and transferring them.","hours":2,"methodology":"Interdisciplinary analysis, Solution transfer, Comparative studies","applications":"Innovation practice, Cross-domain synthesis, Biomimicry"},
+      {"id":11,"number":11,"name":"Prototyping, Rapid Experimentation, and Iterative Improvement","description":"Implementing solutions often requires prototyping. TRIZ-based rapid experimentation and iterative improvement are essential. This course teaches prototyping stages, testing methodologies, and rapid iteration strategies aligned with Agile and Lean methodologies.","hours":2,"methodology":"Prototyping methodology, Rapid iteration, Experiment analysis","applications":"Practical implementation, Product improvement, Market introduction"},
+      {"id":12,"number":12,"name":"Risks, Constraints, and Ethical Issues in TRIZ","description":"Any solution carries risks, regulatory constraints, and ethical considerations. TRIZ acknowledges these aspects. This course teaches risk analysis, legal constraints, and finding solutions that are both creative and responsible.","hours":2,"methodology":"Risk analysis, Ethical reasoning, Legal constraints","applications":"Responsible improvement, Ethical innovation, Standards compliance"},
+      {"id":13,"number":13,"name":"TRIZ Software and Computer Tools","description":"Modern TRIZ is implemented through specialized software tools like iGrafx TRIZ and TRIZ Master. This course teaches famous TRIZ software, their functions, and applications. Students learn using computer tools to find solutions efficiently.","hours":2,"methodology":"Software tools, Computer simulation, Algorithm analysis","applications":"Automated analysis, Fast solution finding, Database utilization"},
+      {"id":14,"number":14,"name":"Applying TRIZ in Engineering: Mechanical Engineering and Mechanics","description":"Mechanical engineering is a primary TRIZ application domain. This course teaches how automotive design, electric motors, and mechanical systems are solved using TRIZ. Students analyze real mechanical problems and solve them using TRIZ.","hours":2,"methodology":"Technical analysis, Design methodology, Simulation","applications":"Automotive industry, Mechanical systems, Energy sector"},
+      {"id":15,"number":15,"name":"Applying TRIZ in Biology, Medicine, and Pharmacology","description":"TRIZ applies to biology and medicine. Drugs must be effective but without harmful side effects - a contradiction. Medical devices and surgical mechanisms are improved using TRIZ. This course teaches solving medical problems using systematic TRIZ analysis.","hours":2,"methodology":"Biology analysis, Medical problems, Experimental methods","applications":"Drug development, Medical technologies, Biological improvement"},
+      {"id":16,"number":16,"name":"Applying TRIZ in Electronics, Computers, and Software","description":"Electronics and IT are emerging TRIZ application domains. Processor design involves contradictions like speed vs heat. Complex software must run fast - another contradiction. This course teaches applying TRIZ to IT problems effectively.","hours":2,"methodology":"IT analysis, Algorithm optimization, Architecture improvement","applications":"Chip design, Software optimization, Algorithm improvement"},
+      {"id":17,"number":17,"name":"Collaborative Creative Work and TRIZ Brainstorming","description":"Organizing groups using TRIZ requires careful team structure. This course teaches TRIZ-focused brainstorming, team dynamics, and creating creative atmospheres. Well-trained teams find more creative and effective solutions.","hours":2,"methodology":"Team dynamics, Brainstorming, Discussion facilitation","applications":"Problem-solving teams, Corporate innovation, Research laboratories"},
+      {"id":18,"number":18,"name":"TRIZ and the Future: Artificial Intelligence, Robotics, and Automation","description":"TRIZ can play a key role in addressing future challenges. This course teaches future TRIZ applications, improving AI systems through TRIZ, and solving robotics problems. Students explore how TRIZ enables humans to maintain control over increasingly complex systems.","hours":2,"methodology":"Future forecasting, AI analysis, Strategic planning","applications":"AI improvement, Robotics, Automated systems"},
+      {"id":19,"number":19,"name":"TRIZ Certification and Professional Licensing","description":"TRIZ professionals' competence is validated through official certifications. TRIZ certification has four levels: Level 1 - Basic through Level 4 - Expert. This course prepares students for certification and guides professional development.","hours":2,"methodology":"Certification standards, Exam preparation, Professional development","applications":"Professional licensing, Certification, Professional practice"},
+      {"id":20,"number":20,"name":"Practical Projects and Real-World TRIZ Solutions","description":"In this final course, students select a real problem and solve it completely using TRIZ methodology. Students perform problem analysis, select TRIZ principles, apply contradiction matrices, build prototypes, and present results. These projects transform theoretical knowledge into practical expertise.","hours":4,"methodology":"Practical application, Project management, Result presentation","applications":"Real solutions, Corporate innovation, Problem solving"}
     ]
   },
   "buttons": {

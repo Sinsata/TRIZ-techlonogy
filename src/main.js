@@ -1,132 +1,21 @@
-// Multilingual course data
-const courseDataByLanguage = {
-    uz: [
-        {
-            name: "TRIZ Asoslari",
-            logo: "macos-logo.png",
-            page: "./src/pages/macos.html",
-            image: "macos-image.png",
-            description: "TRIZ metodologiyasining asosiy tushunchasi va qo'llanish usullari.",
-            anchor: "triz-asoslari"
-        },
-        {
-            name: "40 Ta Ijodiy Prinsip",
-            logo: "windows-logo.png",
-            page: "./src/pages/windows.html",
-            image: "windows-image.png",
-            description: "TRIZ metodologiyasining 40 ta ijodiy prinsiplari va ularning tadbiqi.",
-            anchor: "40-prinsip"
-        },
-        {
-            name: "Paradoks Matritsa",
-            logo: "linux-logo.png",
-            page: "./src/pages/linux.html",
-            image: "linux-image.png",
-            description: "TRIZ metodologiyasining markaziy vositasi - Paradoks matritsasidan foydalanish.",
-            anchor: "paradoks-matritsa"
-        },
-        {
-            name: "Amaliy Pedagogik Misollar",
-            logo: "ios-logo.png",
-            page: "./src/pages/ios.html",
-            image: "ios-image.png",
-            description: "TRIZ metodologiyasini real ta'lim jarayonida qo'llanish misollari.",
-            anchor: "amaliy-misollar"
-        },
-        {
-            name: "Metodika va Vositalari",
-            logo: "android-logo.png",
-            page: "./src/pages/android.html",
-            image: "android-image.png",
-            description: "TRIZ metodologiyasini amaliyotda qo'llanishning metodikasi va vositalari.",
-            anchor: "metodika"
-        }
-    ],
-    en: [
-        {
-            name: "TRIZ Foundations",
-            logo: "macos-logo.png",
-            page: "./src/pages/macos.html",
-            image: "macos-image.png",
-            description: "Basic concepts and application methods of TRIZ methodology.",
-            anchor: "triz-foundations"
-        },
-        {
-            name: "40 Inventive Principles",
-            logo: "windows-logo.png",
-            page: "./src/pages/windows.html",
-            image: "windows-image.png",
-            description: "40 inventive principles of TRIZ methodology and their applications.",
-            anchor: "40-principles"
-        },
-        {
-            name: "Contradiction Matrix",
-            logo: "linux-logo.png",
-            page: "./src/pages/linux.html",
-            image: "linux-image.png",
-            description: "Central tool of TRIZ methodology - Using the Contradiction Matrix.",
-            anchor: "contradiction-matrix"
-        },
-        {
-            name: "Practical Pedagogical Examples",
-            logo: "ios-logo.png",
-            page: "./src/pages/ios.html",
-            image: "ios-image.png",
-            description: "Examples of applying TRIZ methodology in real educational processes.",
-            anchor: "practical-examples"
-        },
-        {
-            name: "Methodology and Tools",
-            logo: "android-logo.png",
-            page: "./src/pages/android.html",
-            image: "android-image.png",
-            description: "Methodology and tools for practical application of TRIZ technology.",
-            anchor: "methodology"
-        }
-    ],
-    ru: [
-        {
-            name: "Основы ТРИЗ",
-            logo: "macos-logo.png",
-            page: "./src/pages/macos.html",
-            image: "macos-image.png",
-            description: "Основные концепции и методы применения методологии ТРИЗ.",
-            anchor: "triz-osnovy"
-        },
-        {
-            name: "40 изобретательских принципов",
-            logo: "windows-logo.png",
-            page: "./src/pages/windows.html",
-            image: "windows-image.png",
-            description: "40 изобретательских принципов методологии ТРИЗ и их применение.",
-            anchor: "40-principov"
-        },
-        {
-            name: "Матрица противоречий",
-            logo: "linux-logo.png",
-            page: "./src/pages/linux.html",
-            image: "linux-image.png",
-            description: "Центральный инструмент методологии ТРИЗ - использование матрицы противоречий.",
-            anchor: "matrica-protivorechij"
-        },
-        {
-            name: "Практические педагогические примеры",
-            logo: "ios-logo.png",
-            page: "./src/pages/ios.html",
-            image: "ios-image.png",
-            description: "Примеры применения методологии ТРИЗ в реальных учебных процессах.",
-            anchor: "prakticheskie-primery"
-        },
-        {
-            name: "Методология и инструменты",
-            logo: "android-logo.png",
-            page: "./src/pages/android.html",
-            image: "android-image.png",
-            description: "Методология и инструменты для практического применения технологии ТРИЗ.",
-            anchor: "metodologiya"
-        }
-    ]
-};
+// Get lessons from i18n system
+function getCourseDataByLanguage() {
+    const langs = { uz: {}, en: {}, ru: {} };
+    const lessons = i18n.t('lessons', []);
+    
+    // Lessons are now loaded from JSON i18n files with full descriptions
+    return lessons.slice(0, 20).map((lesson, idx) => ({
+        id: lesson.id,
+        number: lesson.number,
+        name: lesson.name,
+        description: lesson.description,
+        hours: lesson.hours,
+        methodology: lesson.methodology,
+        applications: lesson.applications,
+        page: `./lesson.html?id=${lesson.id}`,
+        image: `triz-lesson-${lesson.number}.jpg`
+    }));
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     const osData = courseDataByLanguage[i18n.getLanguage()] || courseDataByLanguage['uz'];
