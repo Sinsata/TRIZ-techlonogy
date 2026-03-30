@@ -25,7 +25,8 @@ const translations = {
         fullName: 'To\'liq Ism',
         alreadyHaveAccount: 'Allaqachon akkauntingiz bormi?',
         dontHaveAccount: 'Akkauntingiz yo\'qmi?',
-        invalidEmail: 'Email xato',
+        invalidCredentials: 'Foydalanuvchi nomi yoki parol xato',
+        usernameTaken: 'Bu foydalanuvchi nomi allaqachon olgan',
         passwordMismatch: 'Parollar mos kelmamoqda',
         signupSuccess: 'Muvaffaqiyatli ro\'yxatdan o\'ttingiz!',
         loginSuccess: 'Muvaffaqiyatli kirgansiz!',
@@ -110,6 +111,14 @@ const translations = {
         edit: 'Tahrir Qilish',
         back: 'Orqaga',
         selectLanguage: 'Tilni tanlang',
+        
+        // Footer
+        footerPlatform: 'TRIZ Texnologiyasi - Pedagogik Ijodiy Tafakkur Kurslari',
+        footerCreatedBy: 'Platforma',
+        footerCreatedByName: 'Sinsata',
+        footerCreatedFor: 'uchun tayyorlangan',
+        footerCreatorName: 'Nabiyeva Nigora',
+        footerAllRights: '2024 - Barcha huquqlar himoyalangan',
     },
     en: {
         // Navigation
@@ -136,7 +145,8 @@ const translations = {
         fullName: 'Full Name',
         alreadyHaveAccount: 'Already have an account?',
         dontHaveAccount: 'Don\'t have an account?',
-        invalidEmail: 'Invalid email',
+        invalidCredentials: 'Invalid username or password',
+        usernameTaken: 'This username is already taken',
         passwordMismatch: 'Passwords do not match',
         signupSuccess: 'Successfully signed up!',
         loginSuccess: 'Successfully logged in!',
@@ -221,6 +231,14 @@ const translations = {
         edit: 'Edit',
         back: 'Back',
         selectLanguage: 'Select Language',
+        
+        // Footer
+        footerPlatform: 'TRIZ Technology - Pedagogical Creative Thinking Courses',
+        footerCreatedBy: 'Platform created by',
+        footerCreatedByName: 'Sinsata',
+        footerCreatedFor: 'created for',
+        footerCreatorName: 'Nabiyeva Nigora',
+        footerAllRights: '2024 - All rights reserved',
     },
     ru: {
         // Navigation
@@ -247,7 +265,8 @@ const translations = {
         fullName: 'Полное имя',
         alreadyHaveAccount: 'У вас уже есть аккаунт?',
         dontHaveAccount: 'У вас нет аккаунта?',
-        invalidEmail: 'Неверный адрес электронной почты',
+        invalidCredentials: 'Неверное имя пользователя или пароль',
+        usernameTaken: 'Это имя пользователя уже занято',
         passwordMismatch: 'Пароли не совпадают',
         signupSuccess: 'Успешно зарегистрированы!',
         loginSuccess: 'Успешно вошли!',
@@ -332,6 +351,14 @@ const translations = {
         edit: 'Редактировать',
         back: 'Назад',
         selectLanguage: 'Выберите язык',
+        
+        // Footer
+        footerPlatform: 'ТРИЗ Технология - Педагогические курсы творческого мышления',
+        footerCreatedBy: 'Платформа создана',
+        footerCreatedByName: 'Sinsata',
+        footerCreatedFor: 'создано для',
+        footerCreatorName: 'Nabiyeva Nigora',
+        footerAllRights: '2024 - Все права защищены',
     }
 };
 

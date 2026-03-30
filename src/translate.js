@@ -30,52 +30,62 @@ const TranslationAPI = {
     },
 
     // Translate HTML element content
-    async translateElement(element, targetLang) {
+    async translateElement(element, targetLang, skipSelectors = []) {
         if (!element) return;
         
         // Don't translate certain elements
-        const skipTags = ['SCRIPT', 'STYLE', 'IMG', 'INPUT'];
+        const skipTags = ['SCRIPT', 'STYLE', 'IMG', 'INPUT', 'A'];
         if (skipTags.includes(element.tagName)) return;
+        
+        // Skip elements with i18n attributes
+        if (element.hasAttribute('data-i18n') || element.hasAttribute('data-i18n-placeholder')) return;
         
         // Translate text nodes
         if (element.nodeType === Node.TEXT_NODE) {
             const text = element.textContent.trim();
-            if (text && text.length > 0) {
-                element.textContent = await this.translateText(text, targetLang);
-            }
-        } else {
-            // Recursively translate child nodes
-            for (let child of element.childNodes) {
-                await this.translateElement(child, targetLang);
-            }
-        }
-    },
-
-    // Translate page content
-    async translatePageContent(targetLang) {
-        if (targetLang === 'uz') return; // Default language, no translation needed
-        
-        const body = document.body;
-        const textElements = body.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, td, div.card-text, div.card-title, span.card-text, a');
-        
-        for (let element of textElements) {
-            const text = element.textContent.trim();
-            
-            // Skip empty or very short texts
-            if (!text || text.length < 3) continue;
-            
-            // Skip if already translated or contains special chars
-            if (text.includes('{') || text.includes('[')) continue;
-            
-            try {
+            if (text && text.length > 3 && !text.includes('{')) {
                 const translated = await this.translateText(text, targetLang);
                 if (translated && translated !== text) {
                     element.textContent = translated;
                 }
-            } catch (error) {
-                console.error('[v0] Element translation error:', error);
+            }
+        } else {
+            // Recursively translate child nodes (but skip certain parents)
+            if (!this.shouldSkipElement(element, skipSelectors)) {
+                for (let child of element.childNodes) {
+                    await this.translateElement(child, targetLang, skipSelectors);
+                }
             }
         }
+    },
+
+    // Translate only lesson content (exclude navbar, footer, UI text)
+    async translatePageContent(targetLang) {
+        if (targetLang === 'uz') return; // Default language, no translation needed
+        
+        // Elements to completely skip (navbar, footer, UI elements)
+        const skipSelectors = ['nav', 'footer', '.navbar', '.navbar-brand', '.nav-link', '.form-control', '.btn', 'label[data-i18n]', '[data-i18n]'];
+        
+        // Only translate course/lesson content
+        const contentElements = document.querySelectorAll('.course-content, .lesson-content, .page-header p:not([data-i18n]), .course-description, .post-content, .reply-content');
+        
+        for (let element of contentElements) {
+            await this.translateElement(element, targetLang, skipSelectors);
+        }
+    },
+    
+    // Helper to check if element should be skipped
+    shouldSkipElement(element, skipSelectors) {
+        if (!element) return true;
+        if (element.hasAttribute('data-i18n')) return true;
+        if (element.hasAttribute('data-i18n-placeholder')) return true;
+        
+        for (let selector of skipSelectors) {
+            if (element.matches(selector) || element.closest(selector)) {
+                return true;
+            }
+        }
+        return false;
     },
 
     // Translate course data

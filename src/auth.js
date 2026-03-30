@@ -16,14 +16,10 @@ class AuthManager {
   }
 
   // Foydalanuvchi ro'yxatdan o'tkazish
-  signup(username, email, password) {
+  signup(username, password) {
     const users = this.getAllUsers();
     
-    // Email yoki username allaqachon mavjudmi?
-    if (users.find(u => u.email === email)) {
-      return { success: false, error: 'Email already registered' };
-    }
-    
+    // Username allaqachon mavjudmi?
     if (users.find(u => u.username === username)) {
       return { success: false, error: 'Username already taken' };
     }
@@ -35,7 +31,6 @@ class AuthManager {
     const newUser = {
       id: this.generateId(),
       username: username,
-      email: email,
       passwordHash: this.hashPassword(password),
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString()
@@ -45,15 +40,15 @@ class AuthManager {
     localStorage.setItem('users', JSON.stringify(users));
     
     // Avtomatik kirish
-    this.login(email, password);
+    this.login(username, password);
     
     return { success: true, user: newUser };
   }
 
   // Kirishni tekshirish
-  login(email, password) {
+  login(username, password) {
     const users = this.getAllUsers();
-    const user = users.find(u => u.email === email);
+    const user = users.find(u => u.username === username);
 
     if (!user) {
       return { success: false, error: 'User not found' };

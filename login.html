@@ -263,8 +263,8 @@
           <div class="error-message" id="login-error"></div>
           <form id="login-form" onsubmit="handleLogin(event)">
             <div class="form-group">
-              <label for="login-email" data-i18n="email">Email</label>
-              <input type="email" class="form-control" id="login-email" data-i18n-placeholder="email" placeholder="Email kiriting" required>
+              <label for="login-username" data-i18n="username">Foydalanuvchi nomi</label>
+              <input type="text" class="form-control" id="login-username" data-i18n-placeholder="username" placeholder="Foydalanuvchi nomini kiriting" required>
             </div>
             <div class="form-group">
               <label for="login-password" data-i18n="password">Parol</label>
@@ -295,10 +295,6 @@
               <input type="text" class="form-control" id="signup-username" data-i18n-placeholder="username" placeholder="Foydalanuvchi nomini kiriting" required>
             </div>
             <div class="form-group">
-              <label for="signup-email" data-i18n="email">Email</label>
-              <input type="email" class="form-control" id="signup-email" data-i18n-placeholder="email" placeholder="Email kiriting" required>
-            </div>
-            <div class="form-group">
               <label for="signup-password" data-i18n="password">Parol</label>
               <input type="password" class="form-control" id="signup-password" data-i18n-placeholder="password" placeholder="Kuchli parol tanlang" required onkeyup="checkPasswordStrength(this.value)">
               <div class="strength-bar">
@@ -323,13 +319,13 @@
   </div>
 
   <footer style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 20px; margin-top: 40px;">
-    <p style="margin-bottom: 10px; font-size: 14px;">TRIZ Texnologiyasi - Pedagogik Ijodiy Tafakkur Platformasi</p>
+    <p style="margin-bottom: 10px; font-size: 14px;" data-i18n="footerPlatform">TRIZ Texnologiyasi - Pedagogik Ijodiy Tafakkur Platformasi</p>
     <hr style="border-color: rgba(255,255,255,0.3); margin: 10px 0;">
     <p style="font-size: 12px; margin-bottom: 5px;">
-      Platforma <strong><a href="https://t.me/sinsata" target="_blank" style="color: #fff; text-decoration: underline;">Sinsata</a></strong> tomonidan yaratilgan
+      <span data-i18n="footerCreatedBy">Platforma</span> <strong><a href="https://t.me/sinsata" target="_blank" style="color: #fff; text-decoration: underline;" data-i18n="footerCreatedByName">Sinsata</a></strong> <span data-i18n="footerCreatedFor">tomonidan yaratilgan</span>
     </p>
     <p style="font-size: 12px; margin: 0;">
-      <strong><a href="https://t.me/Nodirjanovna" target="_blank" style="color: #fff; text-decoration: underline;">Nabiyeva Nigora</a></strong> uchun tayyorlangan
+      <strong><a href="https://t.me/Nodirjanovna" target="_blank" style="color: #fff; text-decoration: underline;" data-i18n="footerCreatorName">Nabiyeva Nigora</a></strong> <span>uchun tayyorlangan</span>
     </p>
   </footer>
 
@@ -391,12 +387,12 @@
 
     function handleLogin(event) {
       event.preventDefault();
-      const email = document.getElementById('login-email').value;
+      const username = document.getElementById('login-username').value;
       const password = document.getElementById('login-password').value;
       const errorDiv = document.getElementById('login-error');
 
-      if (!auth.login(email, password)) {
-        errorDiv.textContent = i18n.t('invalidEmail');
+      if (!auth.login(username, password)) {
+        errorDiv.textContent = i18n.t('invalidCredentials');
         errorDiv.classList.add('show');
       } else {
         window.location.href = 'dashboard.html';
@@ -406,7 +402,6 @@
     function handleSignup(event) {
       event.preventDefault();
       const username = document.getElementById('signup-username').value;
-      const email = document.getElementById('signup-email').value;
       const password = document.getElementById('signup-password').value;
       const confirmPassword = document.getElementById('signup-password-confirm').value;
       const errorDiv = document.getElementById('signup-error');
@@ -417,13 +412,13 @@
         return;
       }
 
-      if (auth.signup(username, email, password)) {
+      if (auth.signup(username, password)) {
         document.getElementById('signup-success').classList.add('show');
         setTimeout(() => {
           window.location.href = 'dashboard.html';
         }, 1500);
       } else {
-        errorDiv.textContent = i18n.t('invalidEmail');
+        errorDiv.textContent = i18n.t('usernameTaken');
         errorDiv.classList.add('show');
       }
     }
