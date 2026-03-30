@@ -34,103 +34,103 @@
       {
         "id": 1,
         "number": 1,
-        "name": "Be'ljak o'qituvchilarni sinf radxori va tutorixlik texnologiyasi",
+        "name": "Bo'lajak o'qituvchilarni sinf rahbari va tyutorlik faoliyatiga tayyorlash texnologiyasi",
         "hours": 2,
-        "methodology": "Ideal Yalkuniy Nafta (ITN) qaramashilkataml angaish",
-        "applications": "Yaxshilashni ixtisoslishlari uchun radxori modeli → real vazifalar ilhash solitsirtiqlash → misshamo yechimlarni ihlash qilish"
+        "methodology": "Ideal Yalqinning Nafti (ITN) qaramashilkataml anglash",
+        "applications": "Sinf rahbari modeli → real vazifalar ilhash solitsirtiqalsh → muvofaqqiyatli yechimlarni shakllantirish"
       },
       {
         "id": 2,
         "number": 2,
-        "name": "Tarbiyachi maborati tizimini shakllantirilishi",
+        "name": "Tarbiyachi mahorati tizimini shakllantirish",
         "hours": 2,
         "methodology": "Kastsir tahli; Funktsional tahli",
-        "applications": "O'qituvchining unifikatsiyalanni anglash, ortiqcha etiqodalami foydalanish"
+        "applications": "O'qituvchining mahoratlarini anglash, ortiqcha etiqodlarni foydalanish"
       },
       {
         "id": 3,
         "number": 3,
-        "name": "Tashya tarayoning takshili etishda o'qituvchining o'z talimrni anglish",
+        "name": "Tarbiya jarayonini tashkil etishda o'qituvchining o'z-o'zini tekshirgan diagnostik vositalar",
         "hours": 2,
-        "methodology": "Misomno daresl; anglash-oqibat tahli",
-        "applications": "O'z faoliyatini tahli qilish va kun'chalarni anglash"
+        "methodology": "Misomno daresi; anglash-oqibat tahli",
+        "applications": "O'z faoliyatini tahlil qilish va ko'nikmalarni anglash"
       },
       {
         "id": 4,
         "number": 4,
-        "name": "Tarbiyachi koshivaming shakllantirisii metodlari",
+        "name": "Tarbiyachi faoliyatining asosiy ko'nikmalarini shakllantirish metodlari",
         "hours": 2,
-        "methodology": "Kichik qalandir; modellistiratsh",
-        "applications": "Ko'nikmatarni to'g'ri shakllantirisii"
+        "methodology": "Kichik qa'landir; modellistirish",
+        "applications": "Ko'nikmalarni to'g'ri shakllantirish va rivojlantirish"
       },
       {
         "id": 5,
         "number": 5,
-        "name": "Tarbiya texnologiyalarini qo'llash asoslashg foydalanish; Xozirgi ko'yarlanmish va foydalanish (diagnozastil)",
+        "name": "Tarbiya texnologiyalarini qo'llashda pedagogik vositalardan foydalanish; Tarbiya ko'rganlikni aniqlash (diagnostika)",
         "hours": 4,
-        "methodology": "Multifunktsional o'chasish; ideal modelistsi",
-        "applications": "Bitra vostaatni bir moddada mano'qdan hamda havolalt orqali englash"
+        "methodology": "Multifunktsional o'qitish; ideal modelistsi",
+        "applications": "Bitra vostaatni bir moddada mano'qdan hamda havolalt orqali anglash"
       },
       {
         "id": 6,
         "number": 6,
-        "name": "O'qituvchi maboratini yazisyal sharitsh; Jisosiy topshriqlar",
+        "name": "O'quvchilarni aqliy rivojlanishining yosh xususiyatlari va tashxis etish metodikalari",
         "hours": 2,
-        "methodology": "Sharislytish tahli; individual mamontilashi yechlimlar",
-        "applications": "Fikshan va jisosiy qobiliyatlarini anglash"
+        "methodology": "Sharislytish tahli; individual mamontilashi yechlimlari",
+        "applications": "Fikshan va aqliy qobiliyatlarini anglash"
       },
       {
         "id": 7,
         "number": 7,
-        "name": "Tarbiyada individual yondashaw",
+        "name": "Tarbiyada individual yondashuv",
         "hours": 2,
-        "methodology": "Sharislytish tahli; individual mamontilashi yechlimlar",
+        "methodology": "Sharislytish tahli; individual mamontilashi yechlimlari",
         "applications": "Har bir o'quvchiga shaxsiy yondashaw"
       },
       {
         "id": 8,
         "number": 8,
-        "name": "O'qituvchi maboratini rivojlantirisish ta'lim texnologiyalarini qo'llash",
-        "hours": 3,
+        "name": "O'qituvchi mahoratini rivojlantirishda innovatsion ta'lim texnologiyalarini qo'llash",
+        "hours": 2,
         "methodology": "G'oya garamamtirishi; Brainstorming + TRIZ",
-        "applications": "Innovatsiyalarni rivojantirisish va dars chiqilshing chiqarislashlari tahlil qilish"
+        "applications": "Innovatsiyalarni rivojlantirish va dars chiqilishlaring tahlil qilish"
       },
       {
         "id": 9,
         "number": 9,
-        "name": "Tashkily va isanovar' ishlanish taskili etish metodlari",
+        "name": "Tashkiliy va jamoaviy ishlarni tashkil etish metodikasi",
         "hours": 2,
-        "methodology": "Qarama-qarshilamaon yechishe; rollinga qaratish",
-        "applications": "Gurunglash qarshiligi va optimal ta'qibati mamammii"
+        "methodology": "Qarama-qarshilamaon yechishe; rollinga qaratsh",
+        "applications": "Guruhning qaroriligi va optimal ta'qibati momammii"
       },
       {
         "id": 10,
         "number": 10,
-        "name": "Addisiy tarixvayu'lar va sog'lom tarmushi tazadilanishi yo'llari shakllantirisih",
+        "name": "Axloqiy tarbiyaviy ishlar va sog'lom turmush tarzini shakllantirish yo'llari",
         "hours": 2,
-        "methodology": "Ideal insonn modeli",
-        "applications": "Vasyallanni yanglish; Hayotiy tarqalgan erqali esolov qadriylatirisih shakllantirisih"
+        "methodology": "Ideal insoon modeli",
+        "applications": "Vazifalarni yanglish; Hayotiy tarqalgan erqali etiqod qadriylatirisih shakllantirsh"
       },
       {
         "id": 11,
         "number": 11,
-        "name": "Gurudrlarda ihlash taotarbioasi",
+        "name": "Guruhlarda ishlash texnologiyasi",
         "hours": 2,
-        "methodology": "Kollektiv jisosiy yechim, muammonning topishiqlar trizolgan",
-        "applications": "Loysilaani Varatishlada jisosiy va tanishli rivajlantirisih"
+        "methodology": "Kollektiv jisosiy yechim, muammonning topshiqlari trizolgan",
+        "applications": "Loysilaani varatishlada jisosiy va tanishli rivajlantirisih"
       },
       {
         "id": 12,
         "number": 12,
-        "name": "Tarix'vayu' loysilaani shakllantirisih",
+        "name": "Tarbiyaviy loyihalarni shakllantirish",
         "hours": 2,
         "methodology": "Muammo; Qarama-qarshi shakli; itsiklash",
-        "applications": "Loysilaani Varatishlada jisosiy va tanishli rivajlantirisih"
+        "applications": "Loysilaani varatishlada jisosiy va tanishli rivajlantirisih"
       },
       {
         "id": 13,
         "number": 13,
-        "name": "Pedagogik maboratski tizim ta'lim texnologiyalaridan foydalanish rivojlanishi",
+        "name": "Pedagogik mahoratni oshirishda kompyuter texnologiyalaridan foydalanish",
         "hours": 2,
         "methodology": "Retsur sitfuda foydalanish, sitnotisya",
         "applications": "Ragimli yostilami"
@@ -138,31 +138,31 @@
       {
         "id": 14,
         "number": 14,
-        "name": "O'qituvchida kashhiy taxtab zanosasni shakllantirisih yo'llari",
+        "name": "O'qituvchida kasbiy refleksiyani shakllantirish yo'llari",
         "hours": 2,
         "methodology": "O'z foloytaml tahli sabab-oqibat",
-        "applications": "Refleksiya orqali kashhiy rivajlanismi inqilobanismi"
+        "applications": "Refleksiya orqali kasbiy rivajlanismi inqilobanismi"
       },
       {
         "id": 15,
         "number": 15,
-        "name": "Pedagogik tashlishilash o'qituvchining kashhiy rivajlanishning ta'minlash",
+        "name": "Pedagogik tashxislash asosida o'qituvchining kasbiy rivojlanishini ta'minlash usullari",
         "hours": 4,
         "methodology": "Qarama-qarshilama; ideal anglash",
-        "applications": "To'rqular va o'qitishlarni anglash"
+        "applications": "To'rqular va o'qitishlairni anglash"
       },
       {
         "id": 16,
         "number": 16,
-        "name": "O'qitchhilar qobilyatlarini ta'lim texnologiyalari usulları",
+        "name": "O'quvchilar qobiliyatlari va tarbiyalanganlik darajasini tashxislash usullari",
         "hours": 2,
-        "methodology": "Kashhiy; Funktional sahli; muammoni topshriqalar, muammoni vansifalar",
-        "applications": "Qobilyat va unvayslanganilklari anglash"
+        "methodology": "Kasbiy; Funktsional sahli; muammoni topshiqlar, muammoni vansifalar",
+        "applications": "Qobiliyat va unvayslanganilklari anglash"
       },
       {
         "id": 17,
         "number": 17,
-        "name": "Pedagogik sharshilami o'qituvchilar qarovatigar ke'orami ta'lim texnologiyasi",
+        "name": "Pedagogik maqsadni qo'yilishi va kasbiy kar'erani rivojlantirish",
         "hours": 2,
         "methodology": "Ideal leyara modeli",
         "applications": "Muammoni belgalash va rivajlanismi rejasini turish"
@@ -170,10 +170,10 @@
       {
         "id": 18,
         "number": 18,
-        "name": "O'qituvchi maboratini mazariy taskili etish metodlari",
+        "name": "O'qituvchi mehnatini nazariy va amaliy tashkil etish metodlari",
         "hours": 2,
         "methodology": "Funktsional tahli; resuslami optimal shakllantirilishi",
-        "applications": "Samarali taskili etish, ortiqcha yakkamtrish yuksaltirish"
+        "applications": "Samarali tashkil etish, ortiqcha yakkamtrish yuksaltirish"
       }
     ]
   },

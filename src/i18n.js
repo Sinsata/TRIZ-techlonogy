@@ -6,13 +6,14 @@ const i18n = {
     // Load translations from JSON file
     async loadLanguage(lang) {
         try {
-            const response = await fetch(`src/lang/${lang}.json`);
+            const response = await fetch(`/src/lang/${lang}.json`);
             if (!response.ok) {
-                console.error(`[v0] Failed to load language file for ${lang}`);
+                console.error(`[v0] Failed to load language file for ${lang}, status: ${response.status}`);
                 return false;
             }
             
             this.translations[lang] = await response.json();
+            console.log(`[v0] Loaded language: ${lang}`);
             return true;
         } catch (error) {
             console.error(`[v0] Error loading language file for ${lang}:`, error);
@@ -23,17 +24,32 @@ const i18n = {
     // Initialize languages
     async init() {
         const languages = ['uz', 'en', 'ru'];
+        const loadedLangs = [];
         
         // Load all language files
         for (const lang of languages) {
-            await this.loadLanguage(lang);
+            const success = await this.loadLanguage(lang);
+            if (success) {
+                loadedLangs.push(lang);
+            } else {
+                console.error(`[v0] Failed to load ${lang}.json`);
+            }
         }
         
         // Set saved language or default to uz
         const savedLang = localStorage.getItem('language') || 'uz';
-        this.setLanguage(savedLang);
+        if (loadedLangs.includes(savedLang)) {
+            this.setLanguage(savedLang);
+        } else if (loadedLangs.length > 0) {
+            this.setLanguage(loadedLangs[0]);
+            console.warn(`[v0] Requested language ${savedLang} not available, using ${loadedLangs[0]}`);
+        } else {
+            console.error('[v0] No language files loaded!');
+            return;
+        }
         
-        console.log('[v0] i18n initialized with languages:', languages);
+        console.log('[v0] i18n initialized with languages:', loadedLangs);
+        this.updatePageText();
     },
     
     // Set current language
