@@ -50,8 +50,7 @@
       {"id":18,"number":18,"name":"TRIZ and the Future: Artificial Intelligence, Robotics, and Automation","description":"TRIZ can play a key role in addressing future challenges. This course teaches future TRIZ applications, improving AI systems through TRIZ, and solving robotics problems. Students explore how TRIZ enables humans to maintain control over increasingly complex systems.","hours":2,"methodology":"Future forecasting, AI analysis, Strategic planning","applications":"AI improvement, Robotics, Automated systems"},
       {"id":19,"number":19,"name":"TRIZ Certification and Professional Licensing","description":"TRIZ professionals' competence is validated through official certifications. TRIZ certification has four levels: Level 1 - Basic through Level 4 - Expert. This course prepares students for certification and guides professional development.","hours":2,"methodology":"Certification standards, Exam preparation, Professional development","applications":"Professional licensing, Certification, Professional practice"},
       {"id":20,"number":20,"name":"Practical Projects and Real-World TRIZ Solutions","description":"In this final course, students select a real problem and solve it completely using TRIZ methodology. Students perform problem analysis, select TRIZ principles, apply contradiction matrices, build prototypes, and present results. These projects transform theoretical knowledge into practical expertise.","hours":4,"methodology":"Practical application, Project management, Result presentation","applications":"Real solutions, Corporate innovation, Problem solving"}
-    ]
-  },
+    ],
   "buttons": {
     "save": "Save",
     "cancel": "Cancel",

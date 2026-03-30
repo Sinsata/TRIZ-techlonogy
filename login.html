@@ -258,24 +258,24 @@
       <div class="form-section active" id="login-section">
         <div class="auth-header">
           <h2 data-i18n="loginTitle">Ta'lim Platformasiga Kirish</h2>
-          <p style="margin-top: 10px;">TRIZ Tekhnologiyasi</p>
+          <p style="margin-top: 10px;">Operatsion Tizimlar</p>
         </div>
         <div class="auth-body">
           <div class="error-message" id="login-error"></div>
           <form id="login-form" onsubmit="handleLogin(event)">
             <div class="form-group">
-              <label for="login-username" data-i18n="username">Foydalanuvchi nomi</label>
-              <input type="text" class="form-control" id="login-username" data-i18n-placeholder="username" placeholder="Foydalanuvchi nomini kiriting" required>
+              <label for="login-username" data-i18n="auth.username">Foydalanuvchi nomi</label>
+              <input type="text" class="form-control" id="login-username" data-i18n-placeholder="auth.username" placeholder="Foydalanuvchi nomini kiriting" required>
             </div>
             <div class="form-group">
-              <label for="login-password" data-i18n="password">Parol</label>
-              <input type="password" class="form-control" id="login-password" data-i18n-placeholder="password" placeholder="Parolingizni kiriting" required>
+              <label for="login-password" data-i18n="auth.password">Parol</label>
+              <input type="password" class="form-control" id="login-password" data-i18n-placeholder="auth.password" placeholder="Parolingizni kiriting" required>
             </div>
-            <button type="submit" class="btn btn-auth btn-login" data-i18n="login">Kirish</button>
+            <button type="submit" class="btn btn-auth btn-login" data-i18n="auth.login">Kirish</button>
           </form>
           <div class="toggle-text">
-            <span data-i18n="dontHaveAccount">Akkauntingiz yo'qmi?</span> <a onclick="toggleForms()">
-              <span data-i18n="signup">Ro'yxatdan o'ting</span>
+            <span data-i18n="auth.dontHaveAccount">Akkauntingiz yo'qmi?</span> <a onclick="toggleForms()">
+              <span data-i18n="auth.signup">Ro'yxatdan o'ting</span>
             </a>
           </div>
         </div>
@@ -284,34 +284,34 @@
       <!-- Sign Up Form -->
       <div class="form-section" id="signup-section">
         <div class="auth-header">
-          <h2 data-i18n="signupTitle">Ro'yxatdan O'tish</h2>
+          <h2 data-i18n="auth.signupTitle">Ro'yxatdan O'tish</h2>
           <p style="margin-top: 10px;">Yangi akkaunt yaratish</p>
         </div>
         <div class="auth-body">
           <div class="error-message" id="signup-error"></div>
-          <div class="success-message" id="signup-success" data-i18n="signupSuccess">Akkaunt muvaffaqiyatli yaratildi! Dashboard'ga o'tish...</div>
+          <div class="success-message" id="signup-success" data-i18n="auth.signupSuccess">Akkaunt muvaffaqiyatli yaratildi! Dashboard'ga o'tish...</div>
           <form id="signup-form" onsubmit="handleSignup(event)">
             <div class="form-group">
-              <label for="signup-username" data-i18n="username">Foydalanuvchi nomi</label>
-              <input type="text" class="form-control" id="signup-username" data-i18n-placeholder="username" placeholder="Foydalanuvchi nomini kiriting" required>
+              <label for="signup-username" data-i18n="auth.username">Foydalanuvchi nomi</label>
+              <input type="text" class="form-control" id="signup-username" data-i18n-placeholder="auth.username" placeholder="Foydalanuvchi nomini kiriting" required>
             </div>
             <div class="form-group">
-              <label for="signup-password" data-i18n="password">Parol</label>
-              <input type="password" class="form-control" id="signup-password" data-i18n-placeholder="password" placeholder="Kuchli parol tanlang" required onkeyup="checkPasswordStrength(this.value)">
+              <label for="signup-password" data-i18n="auth.password">Parol</label>
+              <input type="password" class="form-control" id="signup-password" data-i18n-placeholder="auth.password" placeholder="Kuchli parol tanlang" required onkeyup="checkPasswordStrength(this.value)">
               <div class="strength-bar">
                 <div class="strength-fill" id="strength-fill"></div>
               </div>
               <small class="password-strength" id="strength-text"></small>
             </div>
             <div class="form-group">
-              <label for="signup-password-confirm" data-i18n="confirmPassword">Parolni Tasdiqlash</label>
-              <input type="password" class="form-control" id="signup-password-confirm" data-i18n-placeholder="confirmPassword" placeholder="Parolni qaytadan kiriting" required>
+              <label for="signup-password-confirm" data-i18n="auth.confirmPassword">Parolni Tasdiqlash</label>
+              <input type="password" class="form-control" id="signup-password-confirm" data-i18n-placeholder="auth.confirmPassword" placeholder="Parolni qaytadan kiriting" required>
             </div>
-            <button type="submit" class="btn btn-auth btn-login" data-i18n="signup">Ro'yxatdan O'tish</button>
+            <button type="submit" class="btn btn-auth btn-login" data-i18n="auth.signup">Ro'yxatdan O'tish</button>
           </form>
           <div class="toggle-text">
-            <span data-i18n="alreadyHaveAccount">Allaqachon akkauntingiz bor?</span> <a onclick="toggleForms()">
-              <span data-i18n="login">Kirish</span>
+            <span data-i18n="auth.alreadyHaveAccount">Allaqachon akkauntingiz bor?</span> <a onclick="toggleForms()">
+              <span data-i18n="auth.login">Kirish</span>
             </a>
           </div>
         </div>
@@ -334,9 +334,8 @@
   <script src="src/auth.js"></script>
   <script src="src/i18n.js"></script>
   <script>
-    // Initialize i18n and set language selector
-    document.addEventListener('DOMContentLoaded', async () => {
-      await i18n.init();
+    // Set language selector to current language
+    document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('language-select').value = i18n.getLanguage();
     });
 
