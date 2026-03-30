@@ -213,16 +213,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="dashboard.html" data-i18n="dashboard">Dashboard</a>
+            <a class="nav-link" href="dashboard.html" data-i18n="navbar.dashboard">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="courses.html" data-i18n="courses">Kurslar</a>
+            <a class="nav-link" href="courses.html" data-i18n="navbar.courses">Kurslar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="forum.html" data-i18n="forum">Forum</a>
+            <a class="nav-link" href="forum.html" data-i18n="navbar.forum">Forum</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="profile.html" data-i18n="profile">Profil</a>
+            <a class="nav-link" href="profile.html" data-i18n="navbar.profile">Profil</a>
           </li>
           <li class="nav-item language-selector">
             <select id="language-select" onchange="changeLanguage(this.value)">
@@ -232,7 +232,7 @@
             </select>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="logout(); return false;" data-i18n="logout">Chiqish</a>
+            <a class="nav-link" href="#" onclick="logout(); return false;" data-i18n="navbar.logout">Chiqish</a>
           </li>
         </ul>
       </div>
@@ -250,20 +250,20 @@
     <div class="stats-grid">
       <div class="stat-card">
         <div class="stat-number" id="total-lessons">0</div>
-        <div class="stat-label" data-i18n="completedLessons">Tugatilgan Darslar</div>
+        <div class="stat-label" data-i18n="dashboard.completedLessons">Tugatilgan Darslar</div>
       </div>
       <div class="stat-card">
         <div class="stat-number" id="quiz-score">0%</div>
-        <div class="stat-label" data-i18n="averageScore">O'rtacha Test Balli</div>
+        <div class="stat-label" data-i18n="dashboard.averageScore">O'rtacha Test Balli</div>
       </div>
       <div class="stat-card">
         <div class="stat-number" id="completed-courses">0</div>
-        <div class="stat-label">Tugatilgan Kurslar</div>
+        <div class="stat-label" data-i18n="dashboard.endCourses">Tugatilgan Kurslar</div>
       </div>
     </div>
 
     <!-- Course Progress -->
-    <h2 class="section-title" data-i18n="coursesTitle">Kurslar bo'yicha Taraqqiyot</h2>
+    <h2 class="section-title" data-i18n="navbar.courses">Kurslar bo'yicha Taraqqiyot</h2>
     <div id="courses-progress-container">
       <!-- Kurslar progress shu yerga qo'shiladi -->
     </div>

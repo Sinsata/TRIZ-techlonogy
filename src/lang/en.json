@@ -1,4 +1,11 @@
 {
+  "welcome": "Welcome",
+  "startLearning": "Continue your learning journey and explore new knowledge.",
+  "dashboard": {
+    "completedLessons": "Completed Lessons",
+    "averageScore": "Average Score",
+    "endCourses": "Completed Courses"
+  },
   "navbar": {
     "dashboard": "Dashboard",
     "courses": "Courses",

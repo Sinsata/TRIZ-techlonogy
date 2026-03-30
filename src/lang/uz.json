@@ -1,4 +1,11 @@
 {
+  "welcome": "Xush kelibsiz",
+  "startLearning": "O'zingizning ta'lim yo'lingizni davom ettiring va yangi bilimlar o'rganing.",
+  "dashboard": {
+    "completedLessons": "Tugallangan Darslar",
+    "averageScore": "O'rtacha Ball",
+    "endCourses": "Tugallangan Kurslar"
+  },
   "navbar": {
     "dashboard": "Dashboard",
     "courses": "Kurslar",
