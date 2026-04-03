@@ -384,11 +384,16 @@
       const password = document.getElementById('login-password').value;
       const errorDiv = document.getElementById('login-error');
 
-      if (!auth.login(username, password)) {
-        errorDiv.textContent = i18n.t('invalidCredentials');
-        errorDiv.classList.add('show');
-      } else {
+      // Clear previous messages
+      errorDiv.classList.remove('show');
+
+      const result = auth.login(username, password);
+      
+      if (result.success) {
         window.location.href = 'dashboard.html';
+      } else {
+        errorDiv.textContent = result.error || i18n.t('invalidCredentials');
+        errorDiv.classList.add('show');
       }
     }
 
@@ -398,6 +403,11 @@
       const password = document.getElementById('signup-password').value;
       const confirmPassword = document.getElementById('signup-password-confirm').value;
       const errorDiv = document.getElementById('signup-error');
+      const successDiv = document.getElementById('signup-success');
+
+      // Clear previous messages
+      errorDiv.classList.remove('show');
+      successDiv.classList.remove('show');
 
       if (password !== confirmPassword) {
         errorDiv.textContent = i18n.t('passwordMismatch');
@@ -405,13 +415,17 @@
         return;
       }
 
-      if (auth.signup(username, password)) {
-        document.getElementById('signup-success').classList.add('show');
+      const result = auth.signup(username, password);
+      
+      if (result.success) {
+        successDiv.classList.add('show');
+        // Clear form
+        document.getElementById('signup-form').reset();
         setTimeout(() => {
           window.location.href = 'dashboard.html';
         }, 1500);
       } else {
-        errorDiv.textContent = i18n.t('usernameTaken');
+        errorDiv.textContent = result.error || i18n.t('usernameTaken');
         errorDiv.classList.add('show');
       }
     }
